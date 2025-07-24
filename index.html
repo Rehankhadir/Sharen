@@ -1,0 +1,1301 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <title>Exlore - Bootstrap Business Template</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+        
+    <!--====== Magnific Popup CSS ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        
+    <!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+        
+    <!--====== Font Awesome CSS ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+        
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+        
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicons -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.html">
+    <meta name="theme-color" content="#ffffff"> -->
+
+
+    <!-- Stylesheet -->
+    <!-- <link rel="stylesheet" href="fonts/favland.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/fonts/favland.min.css"> -->
+    <!-- <link href="css/theme.min.css" rel=stylesheet> -->
+    <!-- <link href="assets/css/theme.min.css" rel=stylesheet> -->
+    
+</head>
+
+
+<body>
+    <style>
+        .pb-120 {
+        padding-bottom: 120px;
+    }
+    .pt-115 {
+    padding-top: 115px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.section-title .sub-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #05de7d;
+    text-transform: uppercase;
+}
+.section-title .title {
+    font-size: 32px;
+    padding-top: 10px;
+}
+.section-title .title span {
+    font-weight: 400;
+    display: contents;
+}
+
+.project-menu ul li:first-child {
+    margin-left: 0;
+}
+.project-menu ul li {
+    display: inline-block;
+    font-size: 16px;
+    color: #798795;
+    margin-left: 50px;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 3px;
+    margin-top: 10px;
+}
+.single-project {
+    position: relative;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.single-project .project-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(62, 44, 234, 0.85) 0%, rgba(75, 179, 249, 0.85) 100%);
+    background: -o-linear-gradient(left, rgba(62, 44, 234, 0.85) 0%, rgba(75, 179, 249, 0.85) 100%);
+    background: linear-gradient(to right, rgba(62, 44, 234, 0.85) 0%, rgba(75, 179, 249, 0.85) 100%);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    opacity: 0;
+    visibility: hidden;
+}
+.single-project .project-content a {
+    background-color: #05de7d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    -moz-transform: translate(-50%, -50%) scale(0);
+    -ms-transform: translate(-50%, -50%) scale(0);
+    -o-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.single-project .project-content a span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.single-project .project-content a span::before, .single-project .project-content a span::after {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.single-project .project-content a span::after {
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.single-project .project-content .project-title {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.single-project .project-content .project-title .title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.mt-60 {
+    margin-top: 60px;
+}
+.main-btn {
+    display: inline-block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 2px solid #05de7d;
+    padding: 0 30px;
+    font-size: 16px;
+    height: 55px;
+    line-height: 51px;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 5;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    background-color: #05de7d;
+}
+.modal-close{
+    position: absolute;
+    top: .625rem;
+    right: .625rem;
+    height: 1.875rem;
+    width: 1.875rem;
+    border-radius: 100%;
+    background-color: #101729 !important;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #fff;
+    text-shadow: none;
+}
+.form-group label {
+    color: #101729;
+}
+.modal-label-font{
+    font-size: .875rem;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1em + 1.7rem + 2px);
+    padding: .75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #344056;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e1e8f0;
+    border-radius: .4rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.custom-select {
+    display: inline-block;
+    width: 100%;
+    height: calc(1em + 1.7rem + 2px);
+    padding: .75rem 2.5rem .85rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #344056;
+    vertical-align: middle;
+    /* background: #fff url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='htt…31E293B' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E) no-repeat right 1.5rem center / 8px 10px; */
+    border: 1px solid #e1e8f0;
+    border-radius: .4rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.iconbox-soft-primary {
+    background-color: #ebf3fe;
+    color: #3b82f6;
+}
+.iconbox-soft-danger {
+    background-color: #ffecee;
+    color: #ff4154;
+}
+.iconbox-soft-success {
+    background-color: #e7f8f3;
+    color: #10b982;
+}
+.iconbox-soft-info {
+    background-color: #e6f8fb;
+    color: #07b6d5;
+}
+.iconbox-soft-warning {
+    background-color: #fffaea;
+    color: #fdcc2b;
+}
+.iconbox-soft-secondary {
+    background-color: #edeef0;
+    color: #465568;
+}
+.iconbox.icon-lg, .iconbox.icon-xl svg {
+    width: 4rem;
+    height: 4rem;
+}
+.iconbox.icon-lg {
+    min-width: 4rem;
+}
+.iconbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: .375rem;
+    min-width: 2.8rem;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+.card {
+    position: relative;
+    display: flex
+;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .4rem;
+}
+.shadow-smooth-3 {
+    box-shadow: 0 10px 50px 10px rgba(11, 34, 56, .05) !important;
+}
+.iconbox svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.iconbox.icon-lg svg {
+    width: 1.875rem;
+    height: 1.875rem;
+}
+.pt-60{
+    padding-top: 60px;
+}
+    
+    </style>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+   
+   
+    <!--====== PRELOADER PART START ======-->
+
+    <!-- <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!--====== PRELOADER PART ENDS ======-->
+    
+    <!--====== HEADER PART START ======-->
+    
+    <header class="header-area">
+        <div class="navbar-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo.png" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav m-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="#home">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#service">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#about">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#testimonial">Clients</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#blog">Blog</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul> <!-- sub menu -->
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                            
+                            <div class="navbar-btn d-none d-sm-inline-block">
+                                <a class="main-btn" data-scroll-nav="0" data-toggle="modal" data-target="#startTrialModal2" style="color: #fff;">Get A Free Quote</a>
+                            </div>
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navbar area -->
+        
+        <div id="home" class="header-hero bg_cover d-lg-flex align-items-center" style="background-image: url(assets/images/header-hero.jpg)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="header-hero-content">
+                            <h1 class="hero-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Transform Your Digital Presence with Stunning Websites & Growth-Driven Marketing</h1>
+                            <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">We craft high-performance websites, conversion-focused landing pages, and digital campaigns that help your business stand out and scale fast.</p>
+                            <div class="header-play wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+                                <a class="play-btn" href="https://rebrand.ly/explore-ud"  data-toggle="modal" data-target="#startTrialModal2">Get A Free Quote </a>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+            <div class="header-hero-image d-flex align-items-center wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="1.1s">
+                <div class="image">
+                    <img src="assets/images/hero-image.png" alt="Hero Image">
+                </div>
+            </div> 
+
+            <div class="header-shape">
+                <img src="assets/images/shape/header-shape.png" alt="shape">
+            </div>
+        </div> 
+    </header>
+
+    
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== SERVICE PART START ======-->
+
+    <section id="service" class="service-area pt-60">
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center mb-5" style="margin-bottom: 60px !important"  data-wow-duration="1s" data-wow-delay="0.2s">
+                <div class="col-12">
+                    <h6 class="font-weight-medium font-size-sm text-uppercase text-gray-600 text-center">Our Services</h6>
+                </div>
+                <div class="col-lg-12 mb-4 mb-lg-0">
+                  <h2 class="font-weight-bold text-center">What We Deliver & How We Drive Impact</h2>
+                </div>
+    
+                <!-- <div class="col-lg-6">
+                  <p class="text-muted">We bring the results while helping you achieve cost and time savings without taking on risk or management overhead. Our team provides high-level creative education.
+                  </p>
+                </div> -->
+            </div>
+
+        <div class="container mb-5">
+            <div class="service">
+                <div class="row no-gutters justify-content-center">
+                    <div class="col-lg-4 col-md-7">
+                        <div class="single-services wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                            <div class="services-shape"></div>
+                            <div class="services-separator"></div>
+                            
+                            <div class="services-items services-color-1 d-sm-flex">
+                                <div class="services-icon">
+                                    <i class="lni-layout"></i>
+                                </div>
+                                <div class="services-content media-body">
+                                    <h5 class="title">Website Development</h5>
+                                    <p class="text">Websites that feel just right — fast, reliable, and built to grow with your business</p>
+                                </div>
+                            </div> <!-- services items -->
+                        </div> <!-- single services -->
+                    </div>
+                    <div class="col-lg-4 col-md-7">
+                        <div class="single-services services-active wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                            <div class="services-shape"></div>
+                            <div class="services-separator"></div>
+                            
+                            <div class="services-items services-color-2 d-sm-flex">
+                                <div class="services-icon">
+                                    <i class="lni-vector"></i>
+                                </div>
+                                <div class="services-content media-body">
+                                    <h5 class="title">Landing Page Development</h5>
+                                    <p class="text">Beautiful, fast-loading, and high-converting landing pages tailored to your campaign goals.</p>
+                                </div>
+                            </div> <!-- single services -->
+                        </div> <!-- single services -->
+                    </div>
+                    <div class="col-lg-4 col-md-7">
+                        <div class="single-services wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                            <div class="services-shape"></div>
+                            <div class="services-separator"></div>
+                            
+                            <div class="services-items services-color-3 d-sm-flex">
+                                <div class="services-icon">
+                                    <i class="lni-blackboard"></i>
+                                </div>
+                                <div class="services-content media-body">
+                                    <h5 class="title">Digital Marketing</h5>
+                                    <p class="text">Reach your audience, grow your traffic, and convert more leads with our digital strategies.</p>
+                                </div>
+                            </div> <!-- single services -->
+                        </div> <!-- single services -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- service -->
+        </div> <!-- container -->
+    <!-- </section> -->
+
+
+     <!-- Services -->
+
+     <!-- <section class=""> -->
+
+        
+
+            
+
+            <div class="row " >
+                <div class="col-lg-4 col-sm-6 wow fadeInUp"   data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="card my-3 shadow-smooth-3 border-light">
+                        <div class="card-body">
+                            <div class="feature flex-column">
+                                 <div class="iconbox icon-lg rounded-circle iconbox-soft-primary mb-4">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2428 4.73756C15.2428 6.95855 17.0459 8.75902 19.2702 8.75902C19.5151 8.75782 19.7594 8.73431 20 8.68878V16.6615C20 20.0156 18.0215 22 14.6624 22H7.34636C3.97851 22 2 20.0156 2 16.6615V9.3561C2 6.00195 3.97851 4 7.34636 4H15.3131C15.2659 4.243 15.2423 4.49001 15.2428 4.73756ZM13.15 14.8966L16.0078 11.2088V11.1912C16.2525 10.8625 16.1901 10.3989 15.8671 10.1463C15.7108 10.0257 15.5122 9.97345 15.3167 10.0016C15.1211 10.0297 14.9453 10.1358 14.8295 10.2956L12.4201 13.3951L9.6766 11.2351C9.51997 11.1131 9.32071 11.0592 9.12381 11.0856C8.92691 11.1121 8.74898 11.2166 8.63019 11.3756L5.67562 15.1863C5.57177 15.3158 5.51586 15.4771 5.51734 15.6429C5.5002 15.9781 5.71187 16.2826 6.03238 16.3838C6.35288 16.485 6.70138 16.3573 6.88031 16.0732L9.35125 12.8771L12.0948 15.0283C12.2508 15.1541 12.4514 15.2111 12.6504 15.1863C12.8494 15.1615 13.0297 15.0569 13.15 14.8966Z" fill="currentColor"/>
+                                        <circle opacity="0.4" cx="19.5" cy="4.5" r="2.5" fill="currentColor"/>
+                                    </svg>                                                                                                                               
+                                </div>
+                                <div class="feature-content">
+                                    <h5 class="font-weight-semibold">Custom Business Website</h5>
+                                    <p class="text-muted mb-0">Designed with the latest design trends in mind. Favland feels modern, minimal, and beautiful to make your life easier.</p>
+                                    <a href="javascript:;" class="d-inline-block font-size-sm pt-4">Learn More --></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp"   data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="card my-3 shadow-smooth-3 border-light">
+                        <div class="card-body">
+                            <div class="feature flex-column">
+                                 <div class="iconbox icon-lg rounded-circle iconbox-soft-danger mb-4">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.4" d="M11.9912 18.6215L5.49945 21.8641C5.00921 22.1302 4.39768 21.9525 4.12348 21.4643C4.0434 21.3108 4.00106 21.1402 4 20.9668V13.7088C4 14.4284 4.40573 14.8726 5.47299 15.3701L11.9912 18.6215Z" fill="currentColor"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.89526 2H15.0695C17.7773 2 19.9735 3.06605 20 5.79337V20.9668C19.9989 21.1374 19.9565 21.3051 19.8765 21.4554C19.7479 21.7007 19.5259 21.8827 19.2615 21.9598C18.997 22.0368 18.7128 22.0023 18.4741 21.8641L11.9912 18.6215L5.47299 15.3701C4.40573 14.8726 4 14.4284 4 13.7088V5.79337C4 3.06605 6.19625 2 8.89526 2ZM8.22492 9.62227H15.7486C16.1822 9.62227 16.5336 9.26828 16.5336 8.83162C16.5336 8.39495 16.1822 8.04096 15.7486 8.04096H8.22492C7.79137 8.04096 7.43991 8.39495 7.43991 8.83162C7.43991 9.26828 7.79137 9.62227 8.22492 9.62227Z" fill="currentColor"/>
+                                    </svg>                                                                                                                                 
+                                </div>
+                                <div class="feature-content">
+                                    <h5 class="font-weight-semibold">Graphic Design</h5>
+                                    <p class="text-muted mb-0">Designed with the latest design trends in mind. Favland feels modern, minimal, and beautiful to make your life easier.</p>
+                                    <a href="javascript:;" class="d-inline-block font-size-sm pt-4">Learn More --></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp"   data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="card my-3 shadow-smooth-3 border-light">
+                        <div class="card-body">
+                            <div class="feature flex-column">
+                                 <div class="iconbox icon-lg rounded-circle iconbox-soft-success mb-4">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16.87V9.257H21V16.931C21 20.07 19.0241 22 15.8628 22H8.12733C4.99561 22 3 20.03 3 16.87ZM7.95938 14.41C7.50494 14.431 7.12953 14.07 7.10977 13.611C7.10977 13.151 7.46542 12.771 7.91987 12.75C8.36443 12.75 8.72997 13.101 8.73985 13.55C8.7596 14.011 8.40395 14.391 7.95938 14.41ZM12.0198 14.41C11.5653 14.431 11.1899 14.07 11.1701 13.611C11.1701 13.151 11.5258 12.771 11.9802 12.75C12.4248 12.75 12.7903 13.101 12.8002 13.55C12.82 14.011 12.4643 14.391 12.0198 14.41ZM16.0505 18.09C15.596 18.08 15.2305 17.7 15.2305 17.24C15.2206 16.78 15.5862 16.401 16.0406 16.391H16.0505C16.5148 16.391 16.8902 16.771 16.8902 17.24C16.8902 17.71 16.5148 18.09 16.0505 18.09ZM11.1701 17.24C11.1899 17.7 11.5653 18.061 12.0198 18.04C12.4643 18.021 12.82 17.641 12.8002 17.181C12.7903 16.731 12.4248 16.38 11.9802 16.38C11.5258 16.401 11.1701 16.78 11.1701 17.24ZM7.09989 17.24C7.11965 17.7 7.49506 18.061 7.94951 18.04C8.39407 18.021 8.74973 17.641 8.72997 17.181C8.72009 16.731 8.35456 16.38 7.90999 16.38C7.45554 16.401 7.09989 16.78 7.09989 17.24ZM15.2404 13.601C15.2404 13.141 15.596 12.771 16.0505 12.761C16.4951 12.761 16.8507 13.12 16.8705 13.561C16.8804 14.021 16.5247 14.401 16.0801 14.41C15.6257 14.42 15.2503 14.07 15.2404 13.611V13.601Z" fill="currentColor"/>
+                                        <path opacity="0.4" d="M3.00336 9.2569C3.0162 8.6699 3.0656 7.5049 3.15846 7.1299C3.63267 5.0209 5.24298 3.6809 7.54485 3.4899H16.4559C18.738 3.6909 20.3681 5.0399 20.8423 7.1299C20.9342 7.4949 20.9836 8.6689 20.9964 9.2569H3.00336Z" fill="currentColor"/>
+                                        <path d="M8.30486 6.59C8.73955 6.59 9.06556 6.261 9.06556 5.82V2.771C9.06556 2.33 8.73955 2 8.30486 2C7.87017 2 7.54416 2.33 7.54416 2.771V5.82C7.54416 6.261 7.87017 6.59 8.30486 6.59Z" fill="currentColor"/>
+                                        <path d="M15.6949 6.59C16.1197 6.59 16.4556 6.261 16.4556 5.82V2.771C16.4556 2.33 16.1197 2 15.6949 2C15.2603 2 14.9342 2.33 14.9342 2.771V5.82C14.9342 6.261 15.2603 6.59 15.6949 6.59Z" fill="currentColor"/>
+                                    </svg>                                                                               
+                                </div>
+                                <div class="feature-content">
+                                    <h5 class="font-weight-semibold">Content Strategy</h5>
+                                    <p class="text-muted mb-0">Designed with the latest design trends in mind. Favland feels modern, minimal, and beautiful to make your life easier.</p>
+                                    <a href="javascript:;" class="d-inline-block font-size-sm pt-4">Learn More --></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp"   data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="card my-3 shadow-smooth-3 border-light">
+                        <div class="card-body">
+                            <div class="feature flex-column">
+                                 <div class="iconbox icon-lg rounded-circle iconbox-soft-info mb-4">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.4" d="M21.9999 11.9999C21.9999 17.5229 17.5229 21.9999 11.9999 21.9999C6.4769 21.9999 1.9999 17.5229 1.9999 11.9999C1.9999 6.4779 6.4769 1.9999 11.9999 1.9999C17.5229 1.9999 21.9999 6.4779 21.9999 11.9999Z" fill="currentColor"/>
+                                        <path d="M15.8598 8.7049L14.2398 13.8249C14.1798 14.0349 14.0098 14.2049 13.7998 14.2659L8.6998 15.8649C8.3598 15.9759 8.0298 15.6449 8.1398 15.3049L9.7398 10.1749C9.7998 9.9649 9.9698 9.8049 10.1798 9.7349L15.2998 8.1349C15.6498 8.0249 15.9698 8.3549 15.8598 8.7049Z" fill="currentColor"/>
+                                    </svg>                                                                            
+                                </div>
+                                <div class="feature-content">
+                                    <h5 class="font-weight-semibold">Product Refreshmnet</h5>
+                                    <p class="text-muted mb-0">Designed with the latest design trends in mind. Favland feels modern, minimal, and beautiful to make your life easier.</p>
+                                    <a href="javascript:;" class="d-inline-block font-size-sm pt-4">Learn More --></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp"   data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="card my-3 shadow-smooth-3 border-light">
+                        <div class="card-body">
+                            <div class="feature flex-column">
+                                 <div class="iconbox icon-lg rounded-circle iconbox-soft-warning mb-4">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.53162 2.93677C10.7165 1.66727 13.402 1.68946 15.5664 2.99489C17.7095 4.32691 19.012 6.70418 18.9998 9.26144C18.95 11.8019 17.5533 14.19 15.8075 16.0361C14.7998 17.1064 13.6726 18.0528 12.4488 18.856C12.3228 18.9289 12.1848 18.9777 12.0415 19C11.9036 18.9941 11.7693 18.9534 11.6508 18.8814C9.78243 17.6746 8.14334 16.134 6.81233 14.334C5.69859 12.8314 5.06584 11.016 5 9.13442C4.99856 6.57225 6.34677 4.20627 8.53162 2.93677ZM9.79416 10.1948C10.1617 11.1008 11.0292 11.6918 11.9916 11.6918C12.6221 11.6964 13.2282 11.4438 13.6748 10.9905C14.1214 10.5371 14.3715 9.92064 14.3692 9.27838C14.3726 8.29804 13.7955 7.41231 12.9073 7.03477C12.0191 6.65723 10.995 6.86235 10.3133 7.55435C9.63159 8.24635 9.42664 9.28872 9.79416 10.1948Z" fill="currentColor"/>
+                                        <ellipse opacity="0.4" cx="12" cy="21" rx="5" ry="1" fill="currentColor"/>
+                                    </svg>                                                                        
+                                </div>
+                                <div class="feature-content">
+                                    <h5 class="font-weight-semibold">CX Design</h5>
+                                    <p class="text-muted mb-0">Designed with the latest design trends in mind. Favland feels modern, minimal, and beautiful to make your life easier.</p>
+                                    <a href="javascript:;" class="d-inline-block font-size-sm pt-4">Learn More --></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 wow fadeInUp"   data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="card mt-3 shadow-smooth-3 border-light">
+                        <div class="card-body">
+                            <div class="feature flex-column">
+                                 <div class="iconbox icon-lg rounded-circle iconbox-soft-secondary mb-4">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.4" d="M2.00018 11.0785C2.05018 13.4165 2.19018 17.4155 2.21018 17.8565C2.28118 18.7995 2.64218 19.7525 3.20418 20.4245C3.98618 21.3675 4.94918 21.7885 6.29218 21.7885C8.14818 21.7985 10.1942 21.7985 12.1812 21.7985C14.1762 21.7985 16.1122 21.7985 17.7472 21.7885C19.0712 21.7885 20.0642 21.3565 20.8362 20.4245C21.3982 19.7525 21.7592 18.7895 21.8102 17.8565C21.8302 17.4855 21.9302 13.1445 21.9902 11.0785H2.00018Z" fill="currentColor"/>
+                                        <path d="M11.2454 15.3842V16.6782C11.2454 17.0922 11.5814 17.4282 11.9954 17.4282C12.4094 17.4282 12.7454 17.0922 12.7454 16.6782V15.3842C12.7454 14.9702 12.4094 14.6342 11.9954 14.6342C11.5814 14.6342 11.2454 14.9702 11.2454 15.3842Z" fill="currentColor"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2113 14.5564C10.1113 14.9194 9.7623 15.1514 9.38431 15.1014C6.8333 14.7454 4.39531 13.8404 2.33731 12.4814C2.12631 12.3434 2.00031 12.1074 2.00031 11.8554V8.3894C2.00031 6.2894 3.71231 4.5814 5.81731 4.5814H7.78431C7.97231 3.1294 9.20231 2.0004 10.7043 2.0004H13.2863C14.7873 2.0004 16.0183 3.1294 16.2063 4.5814H18.1833C20.2823 4.5814 21.9903 6.2894 21.9903 8.3894V11.8554C21.9903 12.1074 21.8633 12.3424 21.6543 12.4814C19.5923 13.8464 17.1443 14.7554 14.5763 15.1104C14.5413 15.1154 14.5073 15.1174 14.4733 15.1174C14.1343 15.1174 13.8313 14.8884 13.7463 14.5524C13.5443 13.7564 12.8213 13.1994 11.9903 13.1994C11.1483 13.1994 10.4333 13.7444 10.2113 14.5564ZM13.2863 3.5004H10.7043C10.0313 3.5004 9.46931 3.9604 9.30131 4.5814H14.6883C14.5203 3.9604 13.9583 3.5004 13.2863 3.5004Z" fill="currentColor"/>
+                                    </svg>                                                                                 
+                                </div>
+                                <div class="feature-content">
+                                    <h5 class="font-weight-semibold">Motion Prototyping</h5>
+                                    <p class="text-muted mb-0">Designed with the latest design trends in mind. Favland feels modern, minimal, and beautiful to make your life easier.</p>
+                                    <a href="javascript:;" class="d-inline-block font-size-sm pt-4">Learn More --></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--====== SERVICE PART ENDS ======-->
+    
+    <!--====== ABOUT PART START ======-->
+    
+    <section id="about" class="about-area pt-110 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="about-title text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h6 class="welcome">WELCOME</h6>
+                        <h3 class="title"><span>Know </span> More About.</h3>
+                    </div>
+                </div>
+            </div> <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-image mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <img src="assets/images/about.jpg" alt="">
+                    </div> <!-- about image -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <h3 class="title">Learn Little <br> More About Us <br> and Industry.</h3>
+                        <ul class="about-line">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p class="text">At <b>Sharen</b>, we’re a passionate team of developers, designers, and marketers driven by one goal — to help businesses thrive online. From building visually appealing websites to running performance-based campaigns, we combine creativity with data to deliver real results.</p>
+                        <div class="about-counter pt-20">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="single-counter counter-color-1 mt-30 d-flex">
+                                        <div class="counter-shape">
+                                            <span class="shape-1"></span>
+                                            <span class="shape-2"></span>
+                                        </div>
+                                        <div class="counter-content media-body">
+                                            <span class="counter-count"><span class="counter">350</span>+</span>
+                                            <p class="text">Clients</p>
+                                        </div>
+                                    </div> <!-- single counter -->
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="single-counter counter-color-2 mt-30 d-flex">
+                                        <div class="counter-shape">
+                                            <span class="shape-1"></span>
+                                            <span class="shape-2"></span>
+                                        </div>
+                                        <div class="counter-content media-body">
+                                            <span class="counter-count"><span class="counter">1720</span>+</span>
+                                            <p class="text">Projects Done</p>
+                                        </div>
+                                    </div> <!-- single counter -->
+                                </div>
+                            </div> <!-- row -->
+                        </div> <!-- about counter -->
+                    </div> <!-- about content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    
+    <!--====== ABOUT PART ENDS ======-->
+    
+    <!--====== ANALYSIS PART START ======-->
+
+    <section class="analysis-area pt-115 pb-120 bg_cover" style="background-image: url(assets/images/analysis.jpg)">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="analysis-title text-center pb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <h3 class="title">Learn More About Us In Stats</h3>
+                    </div> <!-- analysis title -->
+                </div>
+            </div> <!-- row -->
+            <div class="analysis-counter">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <div class="single-analysis-counter mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+                            <span class="count"><span class="counter">1720</span><span class="plus">+</span></span>
+                            <p class="text">Projects Done</p>
+                        </div> <!-- single counter -->
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="single-analysis-counter mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <span class="count"><span class="counter">98</span><span class="plus">%</span></span>
+                            <p class="text">Client Satisfaction</p>
+                        </div> <!-- single counter -->
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="single-analysis-counter mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+                            <span class="count"><span class="counter">30</span><span class="plus">+</span></span>
+                            <p class="text">Employee</p>
+                        </div> <!-- single counter -->
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="single-analysis-counter mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
+                            <span class="count"><span class="counter">9970</span><span class="plus">+</span></span>
+                            <p class="text">Coffee Consumed</p>
+                        </div> <!-- single counter -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- analysis counter -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== ANALYSIS PART ENDS ======-->
+    
+    <!--====== PROJECT GALLERY PART START ======-->
+
+    <section id="portfolio" class="project-masonry-area pt-115 pb-120">
+        <div class="container">
+                        <div class="header-hero-content text-center">
+                            <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">You are using free lite version of Explore</h1>
+                            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">Please, purchase full version of the template to get all sections, features and commercial license</p>
+                        <div class="navbar-btn d-none d-sm-inline-block">
+                         <a class="main-btn" href="https://rebrand.ly/explore-ud">Purchase Now</a>
+                        </div>
+                        </div> <!-- header hero content -->
+        </div> <!-- container -->
+    </section>
+
+
+    <section id="portfolio" class="project-masonry-area pt-115 pb-120">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-lg-4">
+                    <div class="section-title pb-20  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: fadeInUp;">
+                        <h6 class="sub-title">Projects</h6>
+                        <h4 class="title">Portfolio <span>Gallery.</span></h4>
+                    </div> <!-- section title -->
+                </div>
+                <!-- <div class="col-lg-8">
+                    <div class="project-menu text-center text-sm-left text-lg-right pb-20 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.7s; animation-name: fadeIn;">
+                        <ul>
+                            <li class="active" data-filter="*">See All</li>
+                            <li data-filter=".apps" class="">Apps</li>
+                            <li data-filter=".branding" class="">Branding</li>
+                            <li data-filter=".creative" class="">Creative</li>
+                            <li data-filter=".laptop" class="">Laptop</li>
+                            <li data-filter=".product">Product</li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div> 
+            <div class="row grid" style="position: relative; height: 1199.98px;">
+                <div class="col-lg-4 col-sm-6 grid-item creative laptop" style="position: absolute; left: 0%; top: 0px;">
+                    <div class="single-project gallery-masonry mt-30">
+                        <div class="project-image">
+                            <img src="https://preview.uideck.com/items/explore/assets/images/protfolio-1.jpg" alt="protfolio">
+                        </div>
+                        <div class="project-content">
+                            <a class="image-popup" href="assets/images/protfolio-1.jpg">
+                                <span></span>
+                            </a>
+                            <div class="project-title">
+                                <h4 class="title">Digital Art Gellary</h4>
+                            </div>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item branding laptop" style="position: absolute; left: 33.3328%; top: 0px;">
+                    <div class="single-project gallery-masonry mt-30">
+                        <div class="project-image">
+                            <img src="https://preview.uideck.com/items/explore/assets/images/protfolio-1.jpg" alt="protfolio">
+                        </div>
+                        <div class="project-content">
+                            <a class="image-popup" href="assets/images/protfolio-1.jpg">
+                                <span></span>
+                            </a>
+                            <div class="project-title">
+                                <h4 class="title">Digital Art Gellary</h4>
+                            </div>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item creative creative" style="position: absolute; left: 66.6657%; top: 0px;">
+                    <div class="single-project gallery-masonry mt-30">
+                        <div class="project-image">
+                            <img src="https://preview.uideck.com/items/explore/assets/images/protfolio-1.jpg" alt="protfolio">
+                        </div>
+                        <div class="project-content">
+                            <a class="image-popup" href="assets/images/protfolio-1.jpg">
+                                <span></span>
+                            </a>
+                            <div class="project-title">
+                                <h4 class="title">Digital Art Gellary</h4>
+                            </div>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item apps product laptop" style="position: absolute; left: 0%; top: 399.994px;">
+                    <div class="single-project gallery-masonry mt-30">
+                        <div class="project-image">
+                            <img src="https://preview.uideck.com/items/explore/assets/images/protfolio-1.jpg" alt="protfolio">
+                        </div>
+                        <div class="project-content">
+                            <a class="image-popup" href="assets/images/protfolio-1.jpg">
+                                <span></span>
+                            </a>
+                            <div class="project-title">
+                                <h4 class="title">Digital Art Gellary</h4>
+                            </div>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item apps branding laptop" style="position: absolute; left: 33.3328%; top: 399.994px;">
+                    <div class="single-project gallery-masonry mt-30">
+                        <div class="project-image">
+                            <img src="https://preview.uideck.com/items/explore/assets/images/protfolio-1.jpg" alt="protfolio">
+                        </div>
+                        <div class="project-content">
+                            <a class="image-popup" href="assets/images/protfolio-1.jpg">
+                                <span></span>
+                            </a>
+                            <div class="project-title">
+                                <h4 class="title">Digital Art Gellary</h4>
+                            </div>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item creative product" style="position: absolute; left: 66.6657%; top: 399.994px;">
+                    <div class="single-project gallery-masonry mt-30">
+                        <div class="project-image">
+                            <img src="https://preview.uideck.com/items/explore/assets/images/protfolio-1.jpg" alt="protfolio">
+                        </div>
+                        <div class="project-content">
+                            <a class="image-popup" href="assets/images/protfolio-1.jpg">
+                                <span></span>
+                            </a>
+                            <div class="project-title">
+                                <h4 class="title">Digital Art Gellary</h4>
+                            </div>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item apps branding laptop" style="position: absolute; left: 0%; top: 799.988px;">
+                    <div class="single-project gallery-masonry mt-30">
+                        <div class="project-image">
+                            <img src="https://preview.uideck.com/items/explore/assets/images/protfolio-1.jpg" alt="protfolio">
+                        </div>
+                        <div class="project-content">
+                            <a class="image-popup" href="assets/images/protfolio-1.jpg">
+                                <span></span>
+                            </a>
+                            <div class="project-title">
+                                <h4 class="title">Digital Art Gellary</h4>
+                            </div>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item apps product laptop" style="position: absolute; left: 33.3328%; top: 799.988px;">
+                    <div class="single-project gallery-masonry mt-30">
+                        <div class="project-image">
+                            <img src="https://preview.uideck.com/items/explore/assets/images/protfolio-1.jpg" alt="protfolio">
+                        </div>
+                        <div class="project-content">
+                            <a class="image-popup" href="assets/images/protfolio-1.jpg">
+                                <span></span>
+                            </a>
+                            <div class="project-title">
+                                <h4 class="title">Digital Art Gellary</h4>
+                            </div>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item creative branding" style="position: absolute; left: 66.6657%; top: 799.988px;">
+                    <div class="single-project gallery-masonry mt-30">
+                        <div class="project-image">
+                            <img src="https://preview.uideck.com/items/explore/assets/images/protfolio-1.jpg" alt="protfolio">
+                        </div>
+                        <div class="project-content">
+                            <a class="image-popup" href="assets/images/protfolio-1.jpg">
+                                <span></span>
+                            </a>
+                            <div class="project-title">
+                                <h4 class="title">Digital Art Gellary</h4>
+                            </div>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="project-btn mt-60 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <a class="main-btn" href="#">Load More</a>
+                    </div> <!-- project btn -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+
+    <!--====== PROJECT GALLERY PART ENDS ======-->
+    
+    
+    <!--====== APP DOWNLOAD PART START ======-->
+    
+    <section id="app" class="app-download-area bg_cover pt-110 pb-120" style="background-image: url(assets/images/app-bg.jpg)">
+        <div class="app-shape-1">
+            <img src="assets/images/shape/app-shape-1.png" alt="shape">
+        </div> <!-- app shape -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="app-download-content text-center">
+                        <h1 class="app-title wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">Designed and Developed 369+ Mobile Apps</h1>
+                        <ul>
+                            <li><a class="app-store wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" href="#"><img src="assets/images/app-store.png" alt="app"></a></li>
+                            <li><a class="play-store wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" href="#"><img src="assets/images/play-store.png" alt="play"></a></li>
+                        </ul>
+                    </div> <!-- app download -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+        <div class="app-shape-2">
+            <img src="assets/images/shape/app-shape-2.png" alt="shape">
+        </div> <!-- app shape -->
+    </section>
+    
+    <!--====== APP DOWNLOAD PART ENDS ======-->
+
+
+    <!--====== TESTIMONIAL PART START ======-->
+    
+    <section id="testimonial" class="testimonial-area pt-70">
+        <div class="container">
+                        <div class="header-hero-content text-center">
+                            <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">You are using free lite version of Explore</h1>
+                            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">Please, purchase full version of the template to get all sections, features and commercial license</p>
+                        <div class="navbar-btn d-none d-sm-inline-block">
+                         <a class="main-btn" href="https://rebrand.ly/explore-ud">Purchase Now</a>
+                        </div>
+                        </div> <!-- header hero content -->
+        </div> <!-- container -->
+    </section>
+    
+    <!--====== TESTIMONIAL PART ENDS ======-->
+    
+        <!--====== BRAND PART START ======-->
+    
+    <div id="brands" class="brand-area pb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="brand-wrapper pt-70 clearfix">
+                        <div class="single-brand mt-50 text-md-left wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                            <img src="assets/images/brand-1.png" alt="brand">
+                        </div> <!-- single brand -->
+                        <div class="single-brand mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+                            <img src="assets/images/brand-2.png" alt="brand">
+                        </div> <!-- single brand -->
+                        <div class="single-brand mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                            <img src="assets/images/brand-3.png" alt="brand">
+                        </div> <!-- single brand -->
+                        <div class="single-brand mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <img src="assets/images/brand-4.png" alt="brand">
+                        </div> <!-- single brand -->
+                        <div class="single-brand mt-50 text-md-right wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                            <img src="assets/images/brand-5.png" alt="brand">
+                        </div> <!-- single brand -->
+                    </div> <!-- brand wrapper -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </div>
+    
+    <!--====== BRAND PART ENDS ======-->
+    
+
+    <!--====== BLOG PART START ======-->
+
+    <section id="blog" class="blog-area pt-115 pb-120">
+        <div class="container">
+                        <div class="header-hero-content text-center">
+                            <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">You are using free lite version of Explore</h1>
+                            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">Please, purchase full version of the template to get all sections, features and commercial license</p>
+                        <div class="navbar-btn d-none d-sm-inline-block">
+                         <a class="main-btn" href="https://rebrand.ly/explore-ud">Purchase Now</a>
+                        </div>
+                        </div> <!-- header hero content -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== BLOG PART ENDS ======-->
+    
+    <!--====== FOOTER PART START ======-->
+    
+    <footer id="footer" class="footer-area bg_cover" style="background-image: url(assets/images/footer-bg.jpg)">
+        <div class="footer-shape">
+            <img src="assets/images/shape/footer-shape.png" alt="footer shape">
+        </div> <!-- footer shape -->
+        <div class="container">
+            <div class="footer-widget pt-30 pb-70">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 order-sm-1 order-lg-1">
+                        <div class="footer-about pt-40 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.3s">
+                            <a href="#">
+                                <img src="assets/images/logo.png" alt="Logo">
+                            </a>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, repudiandae! Totam, nemo sed? Provident.</p>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div> <!-- footer about -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6 order-sm-3 order-lg-2">
+                        <div class="footer-link pt-40 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <div class="footer-title">
+                                <h5 class="title">Services</h5>
+                            </div>
+                            <ul>
+                                <li><a href="#">Web Design</a></li>
+                                <li><a href="#">Web Development</a></li>
+                                <li><a href="#">Business Consultancy</a></li>
+                                <li><a href="#">apps Development</a></li>
+                            </ul>
+                        </div> <!-- footer link -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6 order-sm-4 order-lg-3">
+                        <div class="footer-link pt-40 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.7s">
+                            <div class="footer-title">
+                                <h5 class="title">About Us</h5>
+                            </div>
+                            <ul>
+                                <li><a href="#">Overview</a></li>
+                                <li><a href="#">Why us</a></li>
+                                <li><a href="#">Awards & Recognitions</a></li>
+                                <li><a href="#">Team</a></li>
+                            </ul>
+                        </div> <!-- footer link -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6 order-sm-2 order-lg-4">
+                        <div class="footer-contact pt-40 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.9s">
+                            <div class="footer-title">
+                                <h5 class="title">Contact Info</h5>
+                            </div>
+                            <div class="contact pt-10">
+                                <p class="text">123 Stree New York City , United <br> States Of America 750.</p>
+                                <p class="text">explore@gmail.com</p>
+                                <p class="text">+99 000 555 66 22</p>
+
+                                <ul class="social mt-40">
+                                    <li><a href="#"><i class="lni-facebook"></i></a></li>
+                                    <li><a href="#"><i class="lni-twitter"></i></a></li>
+                                    <li><a href="#"><i class="lni-instagram"></i></a></li>
+                                    <li><a href="#"><i class="lni-linkedin"></i></a></li>
+                                </ul>
+                            </div> <!-- contact -->
+                        </div> <!-- footer contact -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- footer widget -->
+            <div class="footer-copyright text-center">
+                <p class="text">© 2022 Crafted by <a href="https://uideck.com" rel="nofollow">UIdeck</a> All Rights Reserved.</p>
+            </div>
+        </div> <!-- container -->
+    </footer>
+    
+    <!--====== FOOTER PART ENDS ======-->
+    
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+
+
+    <div class="modal fade" id="startTrialModal2" tabindex="-1" aria-labelledby="startTrialModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal">
+            <div class="modal-content overflow-hidden">
+                <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+    
+                <div class="modal-body p-0">
+                
+                <div class="container">
+                    <div class="row">
+    
+                        <div class="col-xl-12 order-1 order-xl-2 px-2 px-sm-5 py-5">
+                            <h2 class="h3 font-weight-bold">Submit the form</h2>
+    
+                            <form id="contactForm">
+                                <div>
+                                    <div class="col-lg px-2">
+                                        <div class="form-group">
+                                            <label for="firstName" class="modal-label-font">Full Name</label>
+                                            <input class="form-control" type="text" name="fullName" id="fullName" placeholder="Robert" aria-describedby="fullName">
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                <div>
+                                    <div class="col-lg px-2">
+                                        <div class="form-group">
+                                            <label for="emailAddress" class="modal-label-font">Email address</label>
+                                            <input class="form-control" type="email" name="email" id="emailAddress" placeholder="robertmatthews@email.com" aria-describedby="emailAddress">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg px-2">
+                                        <div class="form-group">
+                                            <label for="emailAddress" class="modal-label-font">Mobile Number</label>
+                                            <input class="form-control" type="number" name="mobile" id="mobileNum" placeholder="9876543210" aria-describedby="mobileNum">
+                                        </div>
+                                    </div>
+                                    <div class="col-md px-2">
+                                        <div class="form-group">
+                                            <label for="emailAddress" class="modal-label-font">Service</label>
+                                            <select class="custom-select" name="service" required>
+                                                <option selected>Select a Service</option>
+                                                <option value="Website Development">Website Development</option>
+                                                <option value="Landing Page Development">Landing Page Development</option>
+                                                <option value="Digital Marketing">Digital Marketing</option>
+                                            </select>
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-row">
+                                        <div class="col-md px-2">
+                                            <div class="form-group">
+                                                <label for="projectDetails" class="modal-label-font">Message</label>
+                                                <textarea class="form-control" placeholder="Describe your message here..." name="message" id="projectDetails" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+    
+                                <div class="form-row">
+                                    <div class="col-lg px-2 d-flex justify-content-center">
+                                        <button type="submit" class="btn btn-primary btn-color font-size-sm">Submit</button>                                
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                </div>
+    
+            </div>
+            </div>
+    </div>   
+
+    <!--====== BACK TOP TOP PART ENDS ======-->   
+    
+    <!--====== PART START ======-->
+    
+<!--
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    
+    <!--====== PART ENDS ======-->
+
+    <!-- row -->
+
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    
+    <!--====== Counter Up js ======-->
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    
+    <!--====== WOW js ======-->
+    <script src="assets/js/wow.min.js"></script>
+    
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    
+    <!--====== Scroll It js ======-->
+    <script src="assets/js/scrollIt.min.js"></script>
+    
+    
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
+
+    <script src="assets/js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/popper/popper.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/aos/aos.js"></script>
+    <script src="assets/js/wave-effect/waves.min.js"></script>
+
+    <script src="assets/js/parallax/simpleParallax.min.js"></script>
+    <script src="assets/js/swiper/swiper.min.js"></script>
+    <script src="assets/js/swiper/swiper.init.js"></script>
+    <script src="assets/js/shuffle/shuffle.min.js"></script>
+    <script src="assets/js/countup/countUp.js"></script>
+
+
+    <script src="js/theme.js"></script>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("TXg195_u3ghN-0w5Z"); // Replace with your public key
+  })();
+</script>
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_j3l88oe', 'template_8vn2y2u', this)
+        .then(function() {
+          alert("Message sent successfully!");
+          document.getElementById("contactForm").reset();
+        }, function(error) {
+          alert("Failed to send message. Please try again.");
+          console.error("EmailJS Error:", error);
+        });
+    });
+  </script>
+  
+
+    
+</body>
+
+</html>
