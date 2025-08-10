@@ -629,11 +629,28 @@
 .text-center1{
     text-align: center;
 }
+.original-logo{
+    display: none;
+}
+.sticky .white-logo {
+    display: none;
+}
+.sticky .original-logo {
+    display: block !important;
+}
     
+.cta-btn{
+    background: #0cc0df !important;
+}
+.navbar-nav .nav-item.active > a, .navbar-nav .nav-item:hover > a {
+    color: #0cc0df;
+}
+.sticky .navbar-nav .nav-item.active > a, .sticky .navbar-nav .nav-item:hover > a {
+    color: #0cc0df;
+}
+
+
     </style>
-    <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
    
    
     <!--====== PRELOADER PART START ======-->
@@ -668,16 +685,11 @@
                             <ul id="nav" class="navbar-nav m-auto">
                                 <li class="nav-item">
                                     <a class="navbar-brand" href="index.html">
-                                            <h6 style="color: #05de7d; font-size: 22px;">Sharen <span style="display: block; font-size: 14px;">Solutions.</span></h6>
+                                        <img class="white-logo" src="./assets/images/logo3.png" style="height: 45px; width: auto;" />
+                                        <img class="original-logo" src="./assets/images/logo4.png" style="height: 45px; width: auto;" />
                                     </a>
                                 </li> 
                             </ul>
-                            <!-- <a class="navbar-brand" href="index.html"> -->
-                                <!-- <img src="assets/images/logo.png" alt="Logo"> -->
-                                <!-- <img src="assets/images/logo1.png" alt="Logo"> -->
-                                <!-- <img src="assets/images/logo2.png" alt="Logo"> -->
-                                 <!-- <h6>Sharen Studio.</h6> -->
-                            <!-- </a> -->
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
@@ -713,7 +725,7 @@
                             </div> <!-- navbar collapse -->
                             
                             <div class="navbar-btn d-none d-sm-inline-block">
-                                <a class="main-btn" data-scroll-nav="0" data-toggle="modal" data-target="#startTrialModal2" style="color: #fff;">Get A Free Quote</a>
+                                <a class="main-btn cta-btn" data-scroll-nav="0" data-toggle="modal" data-target="#startTrialModal2" style="color: #fff;">Get A Free Quote</a>
                             </div>
                         </nav> <!-- navbar -->
                     </div>
@@ -830,23 +842,12 @@
 
 
      <!-- Services -->
-
-     <!-- <section class=""> -->
-
-        
-
-            
-
             <div class="row " >
                 <div class="col-lg-4 col-sm-6 wow fadeInUp"   data-wow-duration="1s" data-wow-delay="0.2s">
                     <div class="card my-3 shadow-smooth-3 border-light">
                         <div class="card-body card-ht">
                             <div class="feature flex-column">
                                  <div class="iconbox icon-lg rounded-circle iconbox-soft-primary mb-4">
-                                    <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2428 4.73756C15.2428 6.95855 17.0459 8.75902 19.2702 8.75902C19.5151 8.75782 19.7594 8.73431 20 8.68878V16.6615C20 20.0156 18.0215 22 14.6624 22H7.34636C3.97851 22 2 20.0156 2 16.6615V9.3561C2 6.00195 3.97851 4 7.34636 4H15.3131C15.2659 4.243 15.2423 4.49001 15.2428 4.73756ZM13.15 14.8966L16.0078 11.2088V11.1912C16.2525 10.8625 16.1901 10.3989 15.8671 10.1463C15.7108 10.0257 15.5122 9.97345 15.3167 10.0016C15.1211 10.0297 14.9453 10.1358 14.8295 10.2956L12.4201 13.3951L9.6766 11.2351C9.51997 11.1131 9.32071 11.0592 9.12381 11.0856C8.92691 11.1121 8.74898 11.2166 8.63019 11.3756L5.67562 15.1863C5.57177 15.3158 5.51586 15.4771 5.51734 15.6429C5.5002 15.9781 5.71187 16.2826 6.03238 16.3838C6.35288 16.485 6.70138 16.3573 6.88031 16.0732L9.35125 12.8771L12.0948 15.0283C12.2508 15.1541 12.4514 15.2111 12.6504 15.1863C12.8494 15.1615 13.0297 15.0569 13.15 14.8966Z" fill="currentColor"/>
-                                        <circle opacity="0.4" cx="19.5" cy="4.5" r="2.5" fill="currentColor"/>
-                                    </svg>  -->
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-laptop-icon lucide-laptop"><path d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z"/><path d="M20.054 15.987H3.946"/></svg>                                                                                                                             
                                 </div>
                                 <div class="feature-content">
@@ -862,10 +863,6 @@
                         <div class="card-body card-ht">
                             <div class="feature flex-column">
                                  <div class="iconbox icon-lg rounded-circle iconbox-soft-danger mb-4">
-                                    <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.4" d="M11.9912 18.6215L5.49945 21.8641C5.00921 22.1302 4.39768 21.9525 4.12348 21.4643C4.0434 21.3108 4.00106 21.1402 4 20.9668V13.7088C4 14.4284 4.40573 14.8726 5.47299 15.3701L11.9912 18.6215Z" fill="currentColor"/>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.89526 2H15.0695C17.7773 2 19.9735 3.06605 20 5.79337V20.9668C19.9989 21.1374 19.9565 21.3051 19.8765 21.4554C19.7479 21.7007 19.5259 21.8827 19.2615 21.9598C18.997 22.0368 18.7128 22.0023 18.4741 21.8641L11.9912 18.6215L5.47299 15.3701C4.40573 14.8726 4 14.4284 4 13.7088V5.79337C4 3.06605 6.19625 2 8.89526 2ZM8.22492 9.62227H15.7486C16.1822 9.62227 16.5336 9.26828 16.5336 8.83162C16.5336 8.39495 16.1822 8.04096 15.7486 8.04096H8.22492C7.79137 8.04096 7.43991 8.39495 7.43991 8.83162C7.43991 9.26828 7.79137 9.62227 8.22492 9.62227Z" fill="currentColor"/>
-                                    </svg>                                                                                                                                  -->
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor-cog-icon lucide-monitor-cog"><path d="M12 17v4"/><path d="m14.305 7.53.923-.382"/><path d="m15.228 4.852-.923-.383"/><path d="m16.852 3.228-.383-.924"/><path d="m16.852 8.772-.383.923"/><path d="m19.148 3.228.383-.924"/><path d="m19.53 9.696-.382-.924"/><path d="m20.772 4.852.924-.383"/><path d="m20.772 7.148.924.383"/><path d="M22 13v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7"/><path d="M8 21h8"/><circle cx="18" cy="6" r="3"/></svg>
                                 </div>
                                 <div class="feature-content">
@@ -881,12 +878,6 @@
                         <div class="card-body card-ht">
                             <div class="feature flex-column">
                                  <div class="iconbox icon-lg rounded-circle iconbox-soft-success mb-4">
-                                    <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16.87V9.257H21V16.931C21 20.07 19.0241 22 15.8628 22H8.12733C4.99561 22 3 20.03 3 16.87ZM7.95938 14.41C7.50494 14.431 7.12953 14.07 7.10977 13.611C7.10977 13.151 7.46542 12.771 7.91987 12.75C8.36443 12.75 8.72997 13.101 8.73985 13.55C8.7596 14.011 8.40395 14.391 7.95938 14.41ZM12.0198 14.41C11.5653 14.431 11.1899 14.07 11.1701 13.611C11.1701 13.151 11.5258 12.771 11.9802 12.75C12.4248 12.75 12.7903 13.101 12.8002 13.55C12.82 14.011 12.4643 14.391 12.0198 14.41ZM16.0505 18.09C15.596 18.08 15.2305 17.7 15.2305 17.24C15.2206 16.78 15.5862 16.401 16.0406 16.391H16.0505C16.5148 16.391 16.8902 16.771 16.8902 17.24C16.8902 17.71 16.5148 18.09 16.0505 18.09ZM11.1701 17.24C11.1899 17.7 11.5653 18.061 12.0198 18.04C12.4643 18.021 12.82 17.641 12.8002 17.181C12.7903 16.731 12.4248 16.38 11.9802 16.38C11.5258 16.401 11.1701 16.78 11.1701 17.24ZM7.09989 17.24C7.11965 17.7 7.49506 18.061 7.94951 18.04C8.39407 18.021 8.74973 17.641 8.72997 17.181C8.72009 16.731 8.35456 16.38 7.90999 16.38C7.45554 16.401 7.09989 16.78 7.09989 17.24ZM15.2404 13.601C15.2404 13.141 15.596 12.771 16.0505 12.761C16.4951 12.761 16.8507 13.12 16.8705 13.561C16.8804 14.021 16.5247 14.401 16.0801 14.41C15.6257 14.42 15.2503 14.07 15.2404 13.611V13.601Z" fill="currentColor"/>
-                                        <path opacity="0.4" d="M3.00336 9.2569C3.0162 8.6699 3.0656 7.5049 3.15846 7.1299C3.63267 5.0209 5.24298 3.6809 7.54485 3.4899H16.4559C18.738 3.6909 20.3681 5.0399 20.8423 7.1299C20.9342 7.4949 20.9836 8.6689 20.9964 9.2569H3.00336Z" fill="currentColor"/>
-                                        <path d="M8.30486 6.59C8.73955 6.59 9.06556 6.261 9.06556 5.82V2.771C9.06556 2.33 8.73955 2 8.30486 2C7.87017 2 7.54416 2.33 7.54416 2.771V5.82C7.54416 6.261 7.87017 6.59 8.30486 6.59Z" fill="currentColor"/>
-                                        <path d="M15.6949 6.59C16.1197 6.59 16.4556 6.261 16.4556 5.82V2.771C16.4556 2.33 16.1197 2 15.6949 2C15.2603 2 14.9342 2.33 14.9342 2.771V5.82C14.9342 6.261 15.2603 6.59 15.6949 6.59Z" fill="currentColor"/>
-                                    </svg>                                                                                -->
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-server-icon lucide-server"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>
                                 </div>
                                 <div class="feature-content">
@@ -902,10 +893,6 @@
                         <div class="card-body card-ht">
                             <div class="feature flex-column">
                                  <div class="iconbox icon-lg rounded-circle iconbox-soft-info mb-4">
-                                    <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.4" d="M21.9999 11.9999C21.9999 17.5229 17.5229 21.9999 11.9999 21.9999C6.4769 21.9999 1.9999 17.5229 1.9999 11.9999C1.9999 6.4779 6.4769 1.9999 11.9999 1.9999C17.5229 1.9999 21.9999 6.4779 21.9999 11.9999Z" fill="currentColor"/>
-                                        <path d="M15.8598 8.7049L14.2398 13.8249C14.1798 14.0349 14.0098 14.2049 13.7998 14.2659L8.6998 15.8649C8.3598 15.9759 8.0298 15.6449 8.1398 15.3049L9.7398 10.1749C9.7998 9.9649 9.9698 9.8049 10.1798 9.7349L15.2998 8.1349C15.6498 8.0249 15.9698 8.3549 15.8598 8.7049Z" fill="currentColor"/>
-                                    </svg>                                                                             -->
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                                 </div>
                                 <div class="feature-content">
@@ -921,10 +908,6 @@
                         <div class="card-body card-ht">
                             <div class="feature flex-column">
                                  <div class="iconbox icon-lg rounded-circle iconbox-soft-warning mb-4">
-                                    <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.53162 2.93677C10.7165 1.66727 13.402 1.68946 15.5664 2.99489C17.7095 4.32691 19.012 6.70418 18.9998 9.26144C18.95 11.8019 17.5533 14.19 15.8075 16.0361C14.7998 17.1064 13.6726 18.0528 12.4488 18.856C12.3228 18.9289 12.1848 18.9777 12.0415 19C11.9036 18.9941 11.7693 18.9534 11.6508 18.8814C9.78243 17.6746 8.14334 16.134 6.81233 14.334C5.69859 12.8314 5.06584 11.016 5 9.13442C4.99856 6.57225 6.34677 4.20627 8.53162 2.93677ZM9.79416 10.1948C10.1617 11.1008 11.0292 11.6918 11.9916 11.6918C12.6221 11.6964 13.2282 11.4438 13.6748 10.9905C14.1214 10.5371 14.3715 9.92064 14.3692 9.27838C14.3726 8.29804 13.7955 7.41231 12.9073 7.03477C12.0191 6.65723 10.995 6.86235 10.3133 7.55435C9.63159 8.24635 9.42664 9.28872 9.79416 10.1948Z" fill="currentColor"/>
-                                        <ellipse opacity="0.4" cx="12" cy="21" rx="5" ry="1" fill="currentColor"/>
-                                    </svg>                                                                         -->
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-code-icon lucide-search-code"><path d="m13 13.5 2-2.5-2-2.5"/><path d="m21 21-4.3-4.3"/><path d="M9 8.5 7 11l2 2.5"/><circle cx="11" cy="11" r="8"/></svg>
                                 </div>
                                 <div class="feature-content">
@@ -940,11 +923,6 @@
                         <div class="card-body card-ht">
                             <div class="feature flex-column">
                                  <div class="iconbox icon-lg rounded-circle iconbox-soft-secondary mb-4">
-                                    <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path opacity="0.4" d="M2.00018 11.0785C2.05018 13.4165 2.19018 17.4155 2.21018 17.8565C2.28118 18.7995 2.64218 19.7525 3.20418 20.4245C3.98618 21.3675 4.94918 21.7885 6.29218 21.7885C8.14818 21.7985 10.1942 21.7985 12.1812 21.7985C14.1762 21.7985 16.1122 21.7985 17.7472 21.7885C19.0712 21.7885 20.0642 21.3565 20.8362 20.4245C21.3982 19.7525 21.7592 18.7895 21.8102 17.8565C21.8302 17.4855 21.9302 13.1445 21.9902 11.0785H2.00018Z" fill="currentColor"/>
-                                        <path d="M11.2454 15.3842V16.6782C11.2454 17.0922 11.5814 17.4282 11.9954 17.4282C12.4094 17.4282 12.7454 17.0922 12.7454 16.6782V15.3842C12.7454 14.9702 12.4094 14.6342 11.9954 14.6342C11.5814 14.6342 11.2454 14.9702 11.2454 15.3842Z" fill="currentColor"/>
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2113 14.5564C10.1113 14.9194 9.7623 15.1514 9.38431 15.1014C6.8333 14.7454 4.39531 13.8404 2.33731 12.4814C2.12631 12.3434 2.00031 12.1074 2.00031 11.8554V8.3894C2.00031 6.2894 3.71231 4.5814 5.81731 4.5814H7.78431C7.97231 3.1294 9.20231 2.0004 10.7043 2.0004H13.2863C14.7873 2.0004 16.0183 3.1294 16.2063 4.5814H18.1833C20.2823 4.5814 21.9903 6.2894 21.9903 8.3894V11.8554C21.9903 12.1074 21.8633 12.3424 21.6543 12.4814C19.5923 13.8464 17.1443 14.7554 14.5763 15.1104C14.5413 15.1154 14.5073 15.1174 14.4733 15.1174C14.1343 15.1174 13.8313 14.8884 13.7463 14.5524C13.5443 13.7564 12.8213 13.1994 11.9903 13.1994C11.1483 13.1994 10.4333 13.7444 10.2113 14.5564ZM13.2863 3.5004H10.7043C10.0313 3.5004 9.46931 3.9604 9.30131 4.5814H14.6883C14.5203 3.9604 13.9583 3.5004 13.2863 3.5004Z" fill="currentColor"/>
-                                    </svg>                                                                                  -->
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-panel-top-icon lucide-layout-panel-top"><rect width="18" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/></svg>
                                 </div>
                                 <div class="feature-content">
@@ -968,8 +946,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-9">
                     <div class="about-title text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                        <!-- <h6 class="welcome">WELCOME</h6> -->
-                        <h3 class="title"><span>Know </span> More About.</h3>
+                        <h3 class="title"><span>Know </span> More About Us</h3>
                     </div>
                 </div>
             </div> <!-- row -->
@@ -1106,15 +1083,6 @@
         </div>
     </div>
 
-    <!-- <div class="col-lg-4 col-md-6 col-12 mb-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-        <div class="single-project gallery-masonry">
-            <div class="project-image">
-                <img src="assets/images/travelling.jpg" class="img-fluid" style="height: 250px; width: 100%; object-fit: contain;" alt="Travelling Page">
-            </div>
-            <h5 class="title text-center mt-2">Travelling Page</h5>
-        </div>
-    </div> -->
-
     <div class="col-lg-4 col-md-6 col-12 mb-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
         <div class="single-project gallery-masonry">
             <div class="project-image">
@@ -1148,33 +1116,6 @@
 
 
     <!--====== PROJECT GALLERY PART ENDS ======-->
-    
-    
-    <!--====== APP DOWNLOAD PART START ======-->
-    
-    <!-- <section id="app" class="app-download-area bg_cover pt-110 pb-120" style="background-image: url(assets/images/app-bg.jpg)">
-        <div class="app-shape-1">
-            <img src="assets/images/shape/app-shape-1.png" alt="shape">
-        </div> 
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="app-download-content text-center">
-                        <h1 class="app-title wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">Designed and Developed 369+ Mobile Apps</h1>
-                        <ul>
-                            <li><a class="app-store wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" href="#"><img src="assets/images/app-store.png" alt="app"></a></li>
-                            <li><a class="play-store wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" href="#"><img src="assets/images/play-store.png" alt="play"></a></li>
-                        </ul>
-                    </div> 
-                </div>
-            </div> 
-        </div> 
-        <div class="app-shape-2">
-            <img src="assets/images/shape/app-shape-2.png" alt="shape">
-        </div> 
-    </section> -->
-    
-    <!--====== APP DOWNLOAD PART ENDS ======-->
 
 
     <!--====== TESTIMONIAL PART START ======-->
@@ -1290,10 +1231,7 @@
                 <!-- About Us -->
                 <div class="col-lg-3 col-sm-6 order-sm-1 order-lg-1">
                     <div class="footer-about pt-40 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.3s">
-                        <!-- <a href="#">
-                            <img src="assets/images/logo.png" alt="Sharen Logo">
-                        </a> -->
-                        <h6 style="color: #05de7d; font-size: 30px;">SHAREN <span style="display: block; font-size: 20px;">SOLUTIONS.</span></h6>
+                        <img class="white-logo" src="./assets/images/logo3.png" style="height: 52px; width: auto;" />
                         <p class="text">Sharen is a full-service website development and digital marketing agency, helping businesses build strong online presence, drive more traffic, and grow faster.</p>
                         <p class="text">We turn ideas into reality with user-first design, strategic development, and growth-driven solutions.</p>
                     </div>
@@ -1338,8 +1276,8 @@
                             <h5 class="title">Contact Info</h5>
                         </div>
                         <div class="contact">
-                            <p class="text">Sharen Digital Solutions,<br> Hyderabad, Telangana, India</p>
-                            <p class="text">sharensolutions@gmail.com</p>
+                            <p class="text">Sharen Solutions,<br> Hyderabad, Telangana, India</p>
+                            <p class="text">contact@sharensolutions.com</p>
                             <p class="text">+91 9703170369</p>
 
                             <ul class="social mt-40">
@@ -1364,13 +1302,9 @@
 <div style="bottom: 20px;right: 20px; position: fixed;background: #25d366;
         border-radius: 25px;
     padding: 5px 15px;z-index: 10;">
-    <a class="qlwapp-toggle" data-action="open" data-phone="919703170369"
-        data-message="Hi There! I'm looking for a New Website; how can we proceed further..." role="button" tabindex="0"
-        target="_blank"
-        href="https://web.whatsapp.com/send?phone=919703170369&amp;text=Hi%20There!%20I'm%20looking%20for%20a%20New%20Website%3B%20how%20can%20we%20proceed%20further...">
+    <a id="whatsapp-link" target="_blank" style="text-decoration: none;">
         <img src="assets/images/whatsapp.png" alt="WhatsApp Icon" style="height: 40px; width: 40px;">
         <p style="display: inline; color: #fff; margin-right: 10px;">Chat with US</p>
-        <!-- <span class="qlwapp-text">Chat With Us</span> -->
     </a>
 </div>
 
@@ -1660,6 +1594,18 @@ const testimonials = [
             });
         });
   </script>
+
+  <script>
+  const phone = "919703170369";
+  const message = "Hi There! I'm looking for a New Website; how can we proceed further...";
+  const encodedMessage = encodeURIComponent(message);
+
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  document.getElementById("whatsapp-link").href = isMobile
+    ? `https://wa.me/${phone}?text=${encodedMessage}`
+    : `https://web.whatsapp.com/send?phone=${phone}&text=${encodedMessage}`;
+</script>
   
 
     
