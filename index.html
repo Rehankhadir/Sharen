@@ -656,6 +656,22 @@
         height: 770px;
     }
 }
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* pushes it behind content */
+  overflow: hidden;
+}
+
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* behaves like CSS background-size: cover */
+}
+
 
 
     </style>
@@ -741,33 +757,48 @@
             </div> <!-- container -->
         </div> <!-- navbar area -->
         
-        <div id="home" class="header-hero bg_cover d-lg-flex align-items-center" style="background-image: url(assets/images/header-hero.jpg)">
+        <div id="home" class="header-hero d-lg-flex align-items-center">
+            <!-- LCP Hero Image -->
+            <picture class="hero-bg">
+                <source srcset="assets/images/header-hero.webp" type="image/webp">
+                <img src="assets/images/header-hero.jpg" fetchpriority="high" decoding="async"
+                    alt="Elevate Your Brand with Stunning Websites & Smart Digital Marketing" class="hero-bg-img">
+            </picture>
+        
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="header-hero-content">
-                            <h1 class="hero-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Elevate Your Brand with Stunning Websites & Smart Digital Marketing</h1>
-                            <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">We craft high-performance websites, conversion-focused landing pages, and digital campaigns that help your business stand out and scale fast.</p>
+                            <h1 class="hero-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                                Elevate Your Brand with Stunning Websites & Smart Digital Marketing
+                            </h1>
+                            <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                                We craft high-performance websites, conversion-focused landing pages,
+                                and digital campaigns that help your business stand out and scale fast.
+                            </p>
                             <div class="header-play wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
-                                <a class="play-btn" href="https://rebrand.ly/explore-ud"  data-toggle="modal" data-target="#startTrialModal2">Get A Free Quote </a>
+                                <a class="play-btn" href="https://rebrand.ly/explore-ud" data-toggle="modal"
+                                    data-target="#startTrialModal2">
+                                    Get A Free Quote
+                                </a>
                             </div>
-
-                            
-
                         </div>
                     </div>
-                </div> 
-            </div> 
-            <div class="header-hero-image d-flex align-items-center wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="1.1s">
+                </div>
+            </div>
+        
+            <div class="header-hero-image d-flex align-items-center wow fadeInRightBig" data-wow-duration="1s"
+                data-wow-delay="1.1s">
                 <div class="image">
                     <img src="assets/images/hero-image.png" alt="Hero Image">
                 </div>
-            </div> 
-
+            </div>
+        
             <div class="header-shape">
                 <img src="assets/images/shape/header-shape.png" alt="shape">
             </div>
-        </div> 
+        </div>
+
     </header>
 
     
