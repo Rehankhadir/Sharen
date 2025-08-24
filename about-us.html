@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     
     <!--====== Title ======-->
-    <title>Sharen Solutions Blog | SEO, Digital Marketing & Web Development Insights</title>
+    <title>About Sharen Solutions – Web Development & Digital Marketing Agency in Hyderabad</title>
     
-    <meta name="description" content="Explore expert blogs on SEO, digital marketing, web development, and generative engine optimization. Stay updated with strategies to grow your business online.">
+    <meta name="description" content="Sharen Solutions, a Hyderabad-based web development and digital marketing agency, helps startups and small businesses grow online with creative websites, performance-driven campaigns, and innovative digital strategies. Learn more about our mission, vision, and values.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--====== Favicon Icon ======-->
@@ -36,6 +36,22 @@
     
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicons -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.html">
+    <meta name="theme-color" content="#ffffff"> -->
+
+
+    <!-- Stylesheet -->
+    <!-- <link rel="stylesheet" href="fonts/favland.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/fonts/favland.min.css"> -->
+    <!-- <link href="css/theme.min.css" rel=stylesheet> -->
+    <!-- <link href="assets/css/theme.min.css" rel=stylesheet> -->
     
 </head>
 
@@ -627,24 +643,140 @@
     background: #0cc0df !important;
 }
 .navbar-nav .nav-item.active > a, .navbar-nav .nav-item:hover > a {
-    color: #fff;
+    color: #0cc0df;
 }
 .sticky .navbar-nav .nav-item.active > a, .sticky .navbar-nav .nav-item:hover > a {
-    color: #000;
+    color: #0cc0df;
 }
 .sticky .navbar {
     padding: 0px 0;
 }
-.page-banner {
-    padding-top: 160px;
-    padding-bottom: 100px;
+@media only screen and (min-width: 1400px) {
+    .header-hero {
+        height: 770px;
+    }
 }
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* pushes it behind content */
+  overflow: hidden;
+}
+
+.hero-bg-img1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+@media only screen and (max-width: 767px) {
+    .hero-bg-img1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+}
+
+@media only screen and (max-width: 767px) {
+    .header-hero-content .header-play {
+        padding-top: 15px;
+    }
+}
+
 .current-item{
     color: #0cc0df !important;
 }
-.brand-color{
-    color: #0cc0df;
+@media (max-width: 767px) {
+    .header-hero-content {
+        padding-top: 80px;
+    }
 }
+
+@media only screen and (min-width: 1400px) {
+    .header-hero {
+        height: 550px;
+    }
+}
+.hw-48{
+    height: 48px !important;
+    min-width: 48px !important;
+    width: 48px !important;
+}
+.hw-62 {
+    height: 62px !important;
+    min-width: 62px !important;
+    width: 62px !important;
+}
+.about-us-heading {
+    font: bolder 12vw Inter;
+    text-align: center;
+    background: url(./assets/images/media-05.jpg) 50%;
+    background-size: contain;
+    margin: auto;
+    width: 75vw;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.image-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-bg-img1 {
+  width: 100%;
+  /* height: auto; */
+  object-fit: cover;
+  display: block;
+}
+
+/* Dark overlay ONLY on image */
+.image-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* dim effect */
+  z-index: 1; /* sits over image */
+}
+
+/* Make sure text appears above overlay */
+.header-hero-content {
+  position: relative;
+  z-index: 2; /* higher than overlay */
+  color: #fff; /* white text for contrast */
+}
+
+/* Optional: Add stronger text shadow for readability */
+.hero-title {
+  text-shadow: 0px 4px 6px rgba(0,0,0,0.6);
+  font-size: 100px !important;
+  text-align: center;
+}
+@media (max-width: 767px) {
+    .header-hero-content .hero-title {
+        font-size: 30px !important;
+        padding-bottom: 25px;
+    }
+}
+@media (max-width: 767px) {
+    .about1 {
+        font-size: 20px !important;
+    }
+}
+.brand-color{
+    color: #0cc0df !important;
+}
+
 
 
     </style>
@@ -681,9 +813,9 @@
                         <nav class="navbar navbar-expand-lg">
                             <ul id="nav" class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="navbar-brand" href="index.html" aria-label="Sharen Solutions - Home">
-                                        <img class="white-logo" alt="Logo" src="./assets/images/logo3.png" style="height: 45px; width: auto;" />
-                                        <img class="original-logo" alt="Logo" src="./assets/images/logo4.png" style="height: 45px; width: auto;" />
+                                    <a class="navbar-brand" href="index.html"  aria-label="Sharen Solutions - Home">
+                                        <img class="white-logo" src="./assets/images/logo3.png" alt="Logo" style="height: 45px; width: auto;" />
+                                        <img class="original-logo" src="./assets/images/logo4.png" alt="Logo" style="height: 45px; width: auto;" />
                                     </a>
                                 </li> 
                             </ul>
@@ -695,14 +827,14 @@
 
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav m-auto">
-                                    <li class="nav-item active">
+                                    <li class="nav-item">
                                         <a class="page-scroll" href="index.html">Home</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="index.html">Services</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="about-us.html">About Us</a>
+                                        <a class="page-scroll  current-item" href="about-us.html">About Us</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="index.html">Portfolio</a>
@@ -711,7 +843,7 @@
                                         <a class="page-scroll" href="index.html">Clients</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll current-item" href="blogs.html">Blog</a>
+                                        <a class="page-scroll"  href="blogs.html" >Blog</a>
                                         <!-- <ul class="sub-menu">
                                             <li><a href="blogs.html">Blog</a></li>
                                             <li><a href="blog-details.html">Blog Details</a></li>
@@ -730,111 +862,321 @@
             </div> <!-- container -->
         </div> <!-- navbar area -->
         
-        <div id="blogs" class="page-banner bg_cover" style="background-image: url(assets/images/blog-header.jpg)">
+        <div id="home" class="header-hero d-lg-flex align-items-center image-wrapper">
+            <!-- LCP Hero Image -->
+            <picture class="hero-bg">
+                <source srcset="assets/images/team.webp" type="image/webp">
+                <img src="assets/images/team.webp" fetchpriority="high" decoding="async"
+                    alt="Sharen Solutions office in Hyderabad" class="hero-bg-img1">
+            </picture>
+        
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="header-hero-content">
-                            <h2 style=" font-size: 60px; font-weight: 400; color: #fff;" class="page-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"> <b>A Digital</b> Generative <br> Our <b>Blog Page.</b></h2>
-                            <!-- <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">We craft high-performance websites, conversion-focused landing pages, and digital campaigns that help your business stand out and scale fast.</p> -->
-                            <!-- <div class="header-play wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
-                                <a class="play-btn" href="https://rebrand.ly/explore-ud"  data-toggle="modal" data-target="#startTrialModal2">Get A Free Quote </a>
-                            </div> -->
+                            <h1 class="hero-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                               About US
+                            </h1>
                         </div>
                     </div>
-                </div> 
-            </div> 
-        </div> 
+                </div>
+            </div>
+        </div>
+
     </header>
 
+    <div class="main-content">
 
+        <main>           
+            <!-- About Us -->
+            <section class="py-6 mt-5 mb-5">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                       
+                        <div class="col-lg-6 mb-6 mb-lg-0" data-aos="fade-up">
+                            <h6 class="font-weight-medium font-size-sm text-uppercase text-primary brand-color">Know us better</h6>
+                            <h2 class="font-weight-bold mb-4 about1">We’re hyper-focused<br class="d-none d-lg-block"> on what we do best</h2>
+                            <p class="text-muted">At Sharen Solutions, we are more than just a web development and digital marketing agency — we are your growth partner. Based in Hyderabad, India, our mission is to help startups, small businesses, and growing enterprises build a strong digital presence that drives measurable results.</p>
+                            <br>
+                            <p class="text-muted">With 5+ years of expertise in website development, landing page creation, and digital marketing campaigns, we combine creativity, technology, and strategy to deliver solutions that are not only visually appealing but also business-focused.</p>
 
+                        </div>
 
-    <section class="blog-area pt-115 pb-120">
+                        <div class="col-lg-5" data-aos="fade-up" data-aos-delay="50">
+                            <div class="card light-shadow hover-scale hover-shadow-smooth-3">
+                                <div class="card-body">
+                                    <div class="p-0 p-md-4">
+                                        <div class="text-primary mb-3 hw-48">
+                                            <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                                                    <path d="M11.2600599,5.81393408 L2,16 L22,16 L12.7399401,5.81393408 C12.3684331,5.40527646 11.7359848,5.37515988 11.3273272,5.7466668 C11.3038503,5.7680094 11.2814025,5.79045722 11.2600599,5.81393408 Z" fill="#0cc0df" opacity="0.3"></path>
+                                                    <path d="M12.0056789,15.7116802 L20.2805786,6.85290308 C20.6575758,6.44930487 21.2903735,6.42774054 21.6939717,6.8047378 C21.8964274,6.9938498 22.0113578,7.25847607 22.0113578,7.535517 L22.0113578,20 L16.0113578,20 L2,20 L2,7.535517 C2,7.25847607 2.11493033,6.9938498 2.31738608,6.8047378 C2.72098429,6.42774054 3.35378194,6.44930487 3.7307792,6.85290308 L12.0056789,15.7116802 Z" fill="#0cc0df"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <h5 class="font-weight-semibold">Our Mission</h5>
+                                        <p class="text-muted mb-0">Our mission is to empower businesses of all sizes with modern websites, creative designs, and result-driven digital marketing strategies. By combining technology, creativity, and data-driven insights, we aim to help brands connect with their audience, boost visibility, and achieve sustainable success in the digital space.</p>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="p-0 p-md-4">
+                                        <div class="text-primary mb-3 hw-48">
+                                            <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <rect x="0" y="0" width="24" height="24"></rect>
+                                                    <circle fill="currentColor" opacity="0.3" cx="12" cy="9" r="8"></circle>
+                                                    <path d="M14.5297296,11 L9.46184488,11 L11.9758349,17.4645458 L14.5297296,11 Z M10.5679953,19.3624463 L6.53815512,9 L17.4702704,9 L13.3744964,19.3674279 L11.9759405,18.814912 L10.5679953,19.3624463 Z" fill="#0cc0df" fill-rule="nonzero" opacity="0.3"></path>
+                                                    <path d="M10,22 L14,22 L14,22 C14,23.1045695 13.1045695,24 12,24 L12,24 C10.8954305,24 10,23.1045695 10,22 Z" fill="#0cc0df" opacity="0.3"></path>
+                                                    <path d="M9,20 C8.44771525,20 8,19.5522847 8,19 C8,18.4477153 8.44771525,18 9,18 C8.44771525,18 8,17.5522847 8,17 C8,16.4477153 8.44771525,16 9,16 L15,16 C15.5522847,16 16,16.4477153 16,17 C16,17.5522847 15.5522847,18 15,18 C15.5522847,18 16,18.4477153 16,19 C16,19.5522847 15.5522847,20 15,20 C15.5522847,20 16,20.4477153 16,21 C16,21.5522847 15.5522847,22 15,22 L9,22 C8.44771525,22 8,21.5522847 8,21 C8,20.4477153 8.44771525,20 9,20 Z" fill="#0cc0df"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <h5 class="font-weight-semibold">Our Vision</h5>
+                                        <p class="text-muted mb-0">Our vision is to become a leading web development and digital marketing partner for businesses worldwide. We strive to create impactful digital experiences that not only strengthen brand presence but also build long-term trust and measurable growth for our clients. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+          
+            <!-- Values -->
+            <section class="mt-5 mb-5">
+                <div class="container">
+                   
+                    <div class="row mb-3">
+                        <div class="col-lg-12">
+                            <h6 class="font-weight-medium font-size-sm text-uppercase text-primary brand-color">Our Values</h6>
+                            <h2 class="font-weight-bold about1">We provide enterprises with innovative technology for small enterprises
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="d-inline-block my-4" data-aos="fade-up">
+                                <div class="text-primary mb-3 hw-62">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2L4 5V11C4 16.52 7.88 21.74 12 22C16.12 21.74 20 16.52 20 11V5L12 2Z" stroke="#0cc0df" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 11V14" stroke="#0cc0df" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="8" r="1" fill="#0cc0df"/>
+                                    </svg>
+
+                                </div>
+                                <h5 class="font-weight-semibold">Integrity</h5>
+                                <p class="text-muted mb-0">We believe in honest communication, transparent pricing, and ethical practices. Every project we take on reflects our commitment to trustworthy service and long-term client relationships.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="d-inline-block my-4" data-aos="fade-up" data-aos-delay="100">
+                                <div class="text-primary mb-3 hw-62">
+                                    <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                                            <path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z" fill="#0cc0df" fill-rule="nonzero" opacity="0.3"></path>
+                                            <path d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z" fill="#0cc0df" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <h5 class="font-weight-semibold">Innovation</h5>
+                                <p class="text-muted mb-0">We constantly explore the latest technologies and creative solutions in web development, digital marketing, and AI-driven strategies to ensure our clients stay ahead of the competition.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="d-inline-block my-4" data-aos="fade-up" data-aos-delay="150">
+                                <div class="text-primary mb-3 hw-62">
+                                    <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <polygon points="0 0 24 0 24 24 0 24"></polygon>
+                                            <path d="M16.5,4.5 C14.8905,4.5 13.00825,6.32463215 12,7.5 C10.99175,6.32463215 9.1095,4.5 7.5,4.5 C4.651,4.5 3,6.72217984 3,9.55040872 C3,12.6834696 6,16 12,19.5 C18,16 21,12.75 21,9.75 C21,6.92177112 19.349,4.5 16.5,4.5 Z" fill="#0cc0df" fill-rule="nonzero" opacity="0.3"></path>
+                                            <path d="M12,19.5 C6,16 3,12.6834696 3,9.55040872 C3,6.72217984 4.651,4.5 7.5,4.5 C9.1095,4.5 10.99175,6.32463215 12,7.5 L12,19.5 Z" fill="#0cc0df" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <h5 class="font-weight-semibold">Client-Centric Approach</h5>
+                                <p class="text-muted mb-0">Our clients’ success is our success. We focus on understanding your business goals and delivering tailor-made solutions that drive traffic, leads, and conversions.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="d-inline-block my-4" data-aos="fade-up" data-aos-delay="200">
+                                <div class="text-primary mb-3 hw-62">
+                                    <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <rect x="0" y="0" width="24" height="24"></rect>
+                                            <path d="M21.9969433,12.1933592 C21.8948657,15.4175796 19.2490111,18 16,18 L12.0583175,18 L12.0583175,18.9825492 C12.0583175,19.2586916 11.8344599,19.4825492 11.5583175,19.4825492 C11.4509855,19.4825492 11.3465023,19.4480108 11.2603165,19.3840407 L8.40328311,17.263451 C8.18154548,17.0988696 8.13521119,16.7856962 8.29979258,16.5639585 C8.32872576,16.5249774 8.36318164,16.4904176 8.40207551,16.4613672 L11.2591089,14.3274051 C11.48035,14.1621567 11.7936615,14.2075478 11.9589099,14.4287888 C12.0234473,14.5151942 12.0583175,14.6201505 12.0583175,14.7279974 L12.0583175,16 L16,16 C17.6264832,16 19.0262317,15.0292331 19.6514501,13.6354945 C20.5364094,13.3251939 21.3338787,12.8288439 21.9969433,12.1933592 Z" fill="#0cc0df" opacity="0.3"></path>
+                                            <path d="M12.1000181,6 C12.5632884,3.71775968 14.5810421,2 17,2 C19.7614237,2 22,4.23857625 22,7 C22,9.76142375 19.7614237,12 17,12 C14.5810421,12 12.5632884,10.2822403 12.1000181,8 L8,8 C5.790861,8 4,9.790861 4,12 L4,13 C4,14.6568542 5.34314575,16 7,16 L7,18 C4.23857625,18 2,15.7614237 2,13 L2,12 C2,8.6862915 4.6862915,6 8,6 L12.1000181,6 Z M16.7300002,5.668 L16.7300002,9.5 L17.6900002,9.5 L17.6900002,4.5 L16.8180002,4.5 L15.0500002,5.924 L15.6100002,6.588 L16.7300002,5.668 Z" fill="#0cc0df" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <h5 class="font-weight-semibold">Excellence</h5>
+                                <p class="text-muted mb-0">From website design to marketing campaigns, we aim for high-quality, result-driven outcomes that exceed client expectations and create measurable impact.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="d-inline-block my-4" data-aos="fade-up" data-aos-delay="250">
+                                <div class="text-primary mb-3 hw-62">
+                                    <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <rect x="0" y="0" width="24" height="24"></rect>
+                                            <path d="M4.875,20.75 C4.63541667,20.75 4.39583333,20.6541667 4.20416667,20.4625 L2.2875,18.5458333 C1.90416667,18.1625 1.90416667,17.5875 2.2875,17.2041667 C2.67083333,16.8208333 3.29375,16.8208333 3.62916667,17.2041667 L4.875,18.45 L8.0375,15.2875 C8.42083333,14.9041667 8.99583333,14.9041667 9.37916667,15.2875 C9.7625,15.6708333 9.7625,16.2458333 9.37916667,16.6291667 L5.54583333,20.4625 C5.35416667,20.6541667 5.11458333,20.75 4.875,20.75 Z" fill="#0cc0df" fill-rule="nonzero" opacity="0.3"></path>
+                                            <path d="M2,11.8650466 L2,6 C2,4.34314575 3.34314575,3 5,3 L19,3 C20.6568542,3 22,4.34314575 22,6 L22,15 C22,15.0032706 21.9999948,15.0065399 21.9999843,15.009808 L22.0249378,15 L22.0249378,19.5857864 C22.0249378,20.1380712 21.5772226,20.5857864 21.0249378,20.5857864 C20.7597213,20.5857864 20.5053674,20.4804296 20.317831,20.2928932 L18.0249378,18 L12.9835977,18 C12.7263047,14.0909841 9.47412135,11 5.5,11 C4.23590829,11 3.04485894,11.3127315 2,11.8650466 Z M6,7 C5.44771525,7 5,7.44771525 5,8 C5,8.55228475 5.44771525,9 6,9 L15,9 C15.5522847,9 16,8.55228475 16,8 C16,7.44771525 15.5522847,7 15,7 L6,7 Z" fill="#0cc0df"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <h5 class="font-weight-semibold">Collaboration & Teamwork</h5>
+                                <p class="text-muted mb-0">We work closely with clients and internally as a team to ensure seamless project execution. Communication, feedback, and shared goals are at the heart of everything we do.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="d-inline-block my-4" data-aos="fade-up" data-aos-delay="300">
+                                <div class="text-primary mb-3 hw-62">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 8L12 12L18 8V16L12 20L6 16V8Z" stroke="#0cc0df" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <line x1="12" y1="12" x2="12" y2="20" stroke="#0cc0df" stroke-width="2" stroke-linecap="round"/>
+                                        <line x1="12" y1="12" x2="18" y2="8" stroke="#0cc0df" stroke-width="2" stroke-linecap="round"/>
+                                        <line x1="12" y1="12" x2="6" y2="8" stroke="#0cc0df" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                </div>
+                                <h5 class="font-weight-semibold">Continuous Learning</h5>
+                                <p class="text-muted mb-0">In the fast-evolving digital world, we stay updated with latest trends, SEO algorithms, and marketing strategies so that our solutions remain modern, effective, and competitive.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+    </div> 
+
+    <!--====== HEADER PART ENDS ======-->
+
+    
+    <!--====== ABOUT PART START ======-->
+    
+    <section id="about" class="about-area  pb-60">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-image mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <img src="assets/images/about.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <h3 class="title">Learn Little <br> More About Us <br> and Industry.</h3>
+                        <ul class="about-line">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p class="text">At <b>SharenSolutions</b>, we’re a passionate team of developers, designers, and marketers driven by one goal — to help businesses thrive online. From building visually appealing websites to running performance-based campaigns, we combine creativity with data to deliver real results.</p>
+                        <div class="about-counter pt-20">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="single-counter counter-color-1 mt-30 d-flex">
+                                        <div class="counter-shape">
+                                            <span class="shape-1"></span>
+                                            <span class="shape-2"></span>
+                                        </div>
+                                        <div class="counter-content media-body">
+                                            <span class="counter-count"><span class="counter">12</span>+</span>
+                                            <p class="text">Clients</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="single-counter counter-color-2 mt-30 d-flex">
+                                        <div class="counter-shape">
+                                            <span class="shape-1"></span>
+                                            <span class="shape-2"></span>
+                                        </div>
+                                        <div class="counter-content media-body">
+                                            <span class="counter-count"><span class="counter">12</span>+</span>
+                                            <p class="text">Projects Done</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--====== ABOUT PART ENDS ======-->
+
+    <!--====== ANALYSIS PART START ======-->
+
+    <section class="analysis-area pt-70 pb-80 bg_cover" style="background-image: url(assets/images/analysis.jpg)">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-4">
-                    <div class="section-title text-center pb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
-                        <h6 class="sub-title">Our Blog</h6>
-                        <h4 class="title">Latest <span>News.</span></h4>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-
-             <div class="row " >
-                <div class="col-lg-4 col-sm-6 wow fadeInUp"   data-wow-duration="1s" data-wow-delay="0.2s">
-                    <div class="card my-3 shadow-smooth-3 border-light"  style="height: 430px;">
-                        <div class="card-body p-0">
-                            <div class="feature flex-column">
-                                <img src="assets/images/seo-strategy.jpg" alt="Blog Image" class="img-fluid rounded">
-                               
-                                <div class="feature-content p-3">
-                                    <h5 class="font-weight-semibold mb-1">SEO Strategies to Boosting Lead Generation and Business Growth</h5>
-                                    <p class="text-muted mb-0"> In today’s competitive digital market, learning effective SEO strategies...</p>
-                                </div>
-                                 <a href="seo-strategies.html">
-                                    <button class="btn btn-primary m-3" style="border: none;color: #0cc0df; background: none;">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-                                </a>
-                            </div>
-                        </div>
+                <div class="col-lg-7">
+                    <div class="analysis-title text-center pb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <h3 class="title">Learn More About Us In Stats</h3>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 wow fadeInUp"   data-wow-duration="1s" data-wow-delay="0.2s">
-                    <div class="card my-3 shadow-smooth-3 border-light" style="height: 430px;">
-                        <div class="card-body p-0">
-                            <div class="feature flex-column">
-                            <img src="assets/images/dmagency.webp" alt="Blog Image" class="img-fluid rounded" style="height: 210px;width: 100%;">
-
-                                <div class="feature-content p-3">
-                                    <h5 class="font-weight-semibold mb-1">Select Best Digital Marketing Agency in Hyderabad for high-level Brand Promotions</h5>
-                                    <p class="text-muted mb-0">Boost Your Branding with Effective SEO and Social Media Promotional...</p>
-                                </div>
-                                <a href="choose-dmagency.html">
-                                    <button class="btn btn-primary m-3" style="border: none;color: #0cc0df; background: none;">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
-
-
-<!--            
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="project-btn mt-60 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: hidden; animation-duration: 1s; animation-delay: 0.3s; animation-name: none;">
-                        <a class="main-btn" href="#">Load More</a>
+            <div>
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <div class="single-analysis-counter mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+                            <span class="count"><span class="counter">12</span><span class="plus">+</span></span>
+                            <p class="text">Projects Delivered</p>
+                        </div>
                     </div>
-                </div>
-            </div>  -->
+                    <div class="col-md-3 col-6">
+                        <div class="single-analysis-counter mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <span class="count"><span class="counter">98</span><span class="plus">%</span></span>
+                            <p class="text">Client Satisfaction</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="single-analysis-counter mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+                            <span class="count"><span class="counter">12</span><span class="plus">+</span></span>
+                            <p class="text">Brands We’ve Worked With</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="single-analysis-counter mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
+                            <span class="count"><span class="counter">440</span><span class="plus">+</span></span>
+                            <p class="text">Creative Hours Logged</p>
+                        </div>
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- analysis counter -->
         </div> <!-- container -->
     </section>
 
-    
-    <!--====== HEADER PART ENDS ======-->
+    <!--====== ANALYSIS PART ENDS ======-->
 
 
-
-    <!-- Industries We Serve -->
-   
-
-    
-
-    <!-- ====== BLOG PART START ======-->
-
-    <!-- <section id="blog" class="blog-area pt-115 pb-120">
-        <div class="container">
-                        <div class="header-hero-content text-center">
-                            <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">You are using free lite version of Explore</h1>
-                            <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">Please, purchase full version of the template to get all sections, features and commercial license</p>
-                        <div class="navbar-btn d-none d-sm-inline-block">
-                         <a class="main-btn" href="https://rebrand.ly/explore-ud">Purchase Now</a>
+    <section class="py-6 bg-light-primary aos-init aos-animate mt-5 mb-5" data-aos="zoom-in">
+                <div class="container">
+                    <h6 class="font-weight-medium font-size-sm text-uppercase text-primary brand-color">LETS  TALK</h6>
+                                <h4 class="font-weight-bold">Join us</h4>
+                                <hr>
+                    <div class="card p-lg-6" style="border: none !important;">
+                        <div class="row row-cols-1 row-cols-lg-2 align-items-center">
+                            <div class="col mb-4 mb-lg-0">
+                                
+                                <p class="text-dark mb-0"> We invite you to join us on this journey and experience the difference. Whether you want to enhance your online presence, engage your audience, or boost your revenue, we have the expertise and passion to help you succeed.</p> 
+                                <p class="text-dark mb-0">Get in touch today to learn how we can help your business thrive in the digital world.
+ Email us at: <a  href="mailto:contact@sharensolutions.com">contact@sharensolutions.com</a></p> 
+                            </div>
+                            <div class="col text-lg-right">
+                                <a class="main-btn cta-btn" data-scroll-nav="0" data-toggle="modal" data-target="#startTrialModal2" style="color: #fff;border: none !important;">Contact US</a>
+                            </div>
                         </div>
-        </div> 
-    </section> -->
-
-    <!--====== BLOG PART ENDS ====== -->
+                    </div>
+                    
+                </div>
+            </section>
+    
     
     <!--====== FOOTER PART START ======-->
     
@@ -878,7 +1220,7 @@
                             <h5 class="title">Company</h5>
                         </div>
                         <ul>
-                            <li><a  href="about-us.html">About Us</a></li>
+                           <li><a  href="about-us.html">About Us</a></li>
                             <li><a  href="about-us.html">Why Choose Us</a></li>
                             <li><a  href="index.html">Our Portfolio</a></li>
                             <li><a  href="index.html">Client Testimonials</a></li>
@@ -926,7 +1268,6 @@
     </a>
 </div>
 
-    
     <!--====== FOOTER PART ENDS ======-->
     
     <!--====== BACK TOP TOP PART START ======-->
@@ -1011,24 +1352,6 @@
     </div>   
 
     <!--====== BACK TOP TOP PART ENDS ======-->   
-    
-    <!--====== PART START ======-->
-    
-<!--
-    <section class="">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-">
-                    
-                </div>
-            </div>
-        </div>
-    </section>
--->
-    
-    <!--====== PART ENDS ======-->
-
-    <!-- row -->
 
 
     <!--====== Jquery js ======-->
@@ -1059,17 +1382,17 @@
     <script src="assets/js/main.js"></script>
 
 
-    <!-- <script src="assets/js/jquery/jquery-3.5.1.min.js"></script> -->
-    <!-- <script src="assets/js/popper/popper.min.js"></script> -->
-    <!-- <script src="assets/js/bootstrap/bootstrap.min.js"></script> -->
-    <!-- <script src="assets/js/aos/aos.js"></script> -->
-    <!-- <script src="assets/js/wave-effect/waves.min.js"></script> -->
+    <script src="assets/js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/popper/popper.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/aos/aos.js"></script>
+    <script src="assets/js/wave-effect/waves.min.js"></script>
 
-    <!-- <script src="assets/js/parallax/simpleParallax.min.js"></script> -->
-    <!-- <script src="assets/js/swiper/swiper.min.js"></script> -->
-    <!-- <script src="assets/js/swiper/swiper.init.js"></script> -->
-    <!-- <script src="assets/js/shuffle/shuffle.min.js"></script> -->
-    <!-- <script src="assets/js/countup/countUp.js"></script> -->
+    <script src="assets/js/parallax/simpleParallax.min.js"></script>
+    <script src="assets/js/swiper/swiper.min.js"></script>
+    <script src="assets/js/swiper/swiper.init.js"></script>
+    <script src="assets/js/shuffle/shuffle.min.js"></script>
+    <script src="assets/js/countup/countUp.js"></script>
 
 
     <!-- <script src="js/theme.js"></script> -->
@@ -1138,40 +1461,40 @@ const testimonials = [
         const prevButton = document.getElementById('prev-button');
         const nextButton = document.getElementById('next-button');
 
-        // function updateTestimonial(direction) {
-        //     const oldIndex = activeIndex;
-        //     activeIndex = (activeIndex + direction + testimonials.length) % testimonials.length;
+        function updateTestimonial(direction) {
+            const oldIndex = activeIndex;
+            activeIndex = (activeIndex + direction + testimonials.length) % testimonials.length;
 
-        //     testimonials.forEach((testimonial, index) => {
-        //         let img = imageContainer.querySelector(`[data-index="${index}"]`);
-        //         if (!img) {
-        //             img = document.createElement('img');
-        //             img.src = testimonial.src;
-        //             img.alt = testimonial.name;
-        //             img.classList.add('testimonial-image');
-        //             img.dataset.index = index;
-        //             imageContainer.appendChild(img);
-        //         }
+            testimonials.forEach((testimonial, index) => {
+                let img = imageContainer.querySelector(`[data-index="${index}"]`);
+                if (!img) {
+                    img = document.createElement('img');
+                    img.src = testimonial.src;
+                    img.alt = testimonial.name;
+                    img.classList.add('testimonial-image');
+                    img.dataset.index = index;
+                    imageContainer.appendChild(img);
+                }
 
-        //         const offset = index - activeIndex;
-        //         const absOffset = Math.abs(offset);
-        //         const zIndex = testimonials.length - absOffset;
-        //         const opacity = index === activeIndex ? 1 : 0.7;
-        //         const scale = 1 - (absOffset * 0.15);
-        //         const translateY = offset === -1 ? '-20%' : offset === 1 ? '20%' : '0%';
-        //         const rotateY = offset === -1 ? '15deg' : offset === 1 ? '-15deg' : '0deg';
+                const offset = index - activeIndex;
+                const absOffset = Math.abs(offset);
+                const zIndex = testimonials.length - absOffset;
+                const opacity = index === activeIndex ? 1 : 0.7;
+                const scale = 1 - (absOffset * 0.15);
+                const translateY = offset === -1 ? '-20%' : offset === 1 ? '20%' : '0%';
+                const rotateY = offset === -1 ? '15deg' : offset === 1 ? '-15deg' : '0deg';
 
-        //         img.style.zIndex = zIndex;
-        //         img.style.opacity = opacity;
-        //         img.style.transform = `translateY(${translateY}) scale(${scale}) rotateY(${rotateY})`;
-        //     });
+                img.style.zIndex = zIndex;
+                img.style.opacity = opacity;
+                img.style.transform = `translateY(${translateY}) scale(${scale}) rotateY(${rotateY})`;
+            });
 
-        //     nameElement.textContent = testimonials[activeIndex].name;
-        //     designationElement.textContent = testimonials[activeIndex].designation;
-        //     quoteElement.innerHTML = testimonials[activeIndex].quote.split(' ').map(word => `<span class="word">${word}</span>`).join(' ');
+            nameElement.textContent = testimonials[activeIndex].name;
+            designationElement.textContent = testimonials[activeIndex].designation;
+            quoteElement.innerHTML = testimonials[activeIndex].quote.split(' ').map(word => `<span class="word">${word}</span>`).join(' ');
 
-        //     animateWords();
-        // }
+            animateWords();
+        }
 
         function animateWords() {
             const words = quoteElement.querySelectorAll('.word');
@@ -1189,28 +1512,28 @@ const testimonials = [
         }
 
         function handleNext() {
-            // updateTestimonial(1);
+            updateTestimonial(1);
         }
 
         function handlePrev() {
-            // updateTestimonial(-1);
+            updateTestimonial(-1);
         }
 
-        // prevButton.addEventListener('click', handlePrev);
-        // nextButton.addEventListener('click', handleNext);
+        prevButton.addEventListener('click', handlePrev);
+        nextButton.addEventListener('click', handleNext);
 
         // Initial setup
-        // updateTestimonial(0);
+        updateTestimonial(0);
 
         // Autoplay functionality
         const autoplayInterval = setInterval(handleNext, 5000);
 
         // Stop autoplay on user interaction
-        // [prevButton, nextButton].forEach(button => {
-        //     button.addEventListener('click', () => {
-        //         clearInterval(autoplayInterval);
-        //     });
-        // });
+        [prevButton, nextButton].forEach(button => {
+            button.addEventListener('click', () => {
+                clearInterval(autoplayInterval);
+            });
+        });
   </script>
 
   <script>
