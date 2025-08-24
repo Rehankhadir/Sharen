@@ -14,10 +14,10 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
         
     <!--====== Magnific Popup CSS ======-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- <link rel="stylesheet" href="assets/css/magnific-popup.css"> -->
         
     <!--====== Slick CSS ======-->
-    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- <link rel="stylesheet" href="assets/css/slick.css"> -->
         
     <!--====== Font Awesome CSS ======-->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -1344,20 +1344,20 @@
     <script src="assets/js/main.js"></script>
 
 
-    <script src="assets/js/jquery/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/popper/popper.min.js"></script>
-    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
-    <script src="assets/js/aos/aos.js"></script>
-    <script src="assets/js/wave-effect/waves.min.js"></script>
+    <!-- <script src="assets/js/jquery/jquery-3.5.1.min.js"></script> -->
+    <!-- <script src="assets/js/popper/popper.min.js"></script> -->
+    <!-- <script src="assets/js/bootstrap/bootstrap.min.js"></script> -->
+    <!-- <script src="assets/js/aos/aos.js"></script> -->
+    <!-- <script src="assets/js/wave-effect/waves.min.js"></script> -->
 
-    <script src="assets/js/parallax/simpleParallax.min.js"></script>
+    <!-- <script src="assets/js/parallax/simpleParallax.min.js"></script>
     <script src="assets/js/swiper/swiper.min.js"></script>
     <script src="assets/js/swiper/swiper.init.js"></script>
     <script src="assets/js/shuffle/shuffle.min.js"></script>
-    <script src="assets/js/countup/countUp.js"></script>
+    <script src="assets/js/countup/countUp.js"></script> -->
 
 
-    <script src="js/theme.js"></script>
+    <!-- <script src="js/theme.js"></script> -->
     
 
 
@@ -1423,40 +1423,40 @@ const testimonials = [
         const prevButton = document.getElementById('prev-button');
         const nextButton = document.getElementById('next-button');
 
-        function updateTestimonial(direction) {
-            const oldIndex = activeIndex;
-            activeIndex = (activeIndex + direction + testimonials.length) % testimonials.length;
+        // function updateTestimonial(direction) {
+        //     const oldIndex = activeIndex;
+        //     activeIndex = (activeIndex + direction + testimonials.length) % testimonials.length;
 
-            testimonials.forEach((testimonial, index) => {
-                let img = imageContainer.querySelector(`[data-index="${index}"]`);
-                if (!img) {
-                    img = document.createElement('img');
-                    img.src = testimonial.src;
-                    img.alt = testimonial.name;
-                    img.classList.add('testimonial-image');
-                    img.dataset.index = index;
-                    imageContainer.appendChild(img);
-                }
+        //     testimonials.forEach((testimonial, index) => {
+        //         let img = imageContainer.querySelector(`[data-index="${index}"]`);
+        //         if (!img) {
+        //             img = document.createElement('img');
+        //             img.src = testimonial.src;
+        //             img.alt = testimonial.name;
+        //             img.classList.add('testimonial-image');
+        //             img.dataset.index = index;
+        //             imageContainer.appendChild(img);
+        //         }
 
-                const offset = index - activeIndex;
-                const absOffset = Math.abs(offset);
-                const zIndex = testimonials.length - absOffset;
-                const opacity = index === activeIndex ? 1 : 0.7;
-                const scale = 1 - (absOffset * 0.15);
-                const translateY = offset === -1 ? '-20%' : offset === 1 ? '20%' : '0%';
-                const rotateY = offset === -1 ? '15deg' : offset === 1 ? '-15deg' : '0deg';
+        //         const offset = index - activeIndex;
+        //         const absOffset = Math.abs(offset);
+        //         const zIndex = testimonials.length - absOffset;
+        //         const opacity = index === activeIndex ? 1 : 0.7;
+        //         const scale = 1 - (absOffset * 0.15);
+        //         const translateY = offset === -1 ? '-20%' : offset === 1 ? '20%' : '0%';
+        //         const rotateY = offset === -1 ? '15deg' : offset === 1 ? '-15deg' : '0deg';
 
-                img.style.zIndex = zIndex;
-                img.style.opacity = opacity;
-                img.style.transform = `translateY(${translateY}) scale(${scale}) rotateY(${rotateY})`;
-            });
+        //         img.style.zIndex = zIndex;
+        //         img.style.opacity = opacity;
+        //         img.style.transform = `translateY(${translateY}) scale(${scale}) rotateY(${rotateY})`;
+        //     });
 
-            nameElement.textContent = testimonials[activeIndex].name;
-            designationElement.textContent = testimonials[activeIndex].designation;
-            quoteElement.innerHTML = testimonials[activeIndex].quote.split(' ').map(word => `<span class="word">${word}</span>`).join(' ');
+        //     nameElement.textContent = testimonials[activeIndex].name;
+        //     designationElement.textContent = testimonials[activeIndex].designation;
+        //     quoteElement.innerHTML = testimonials[activeIndex].quote.split(' ').map(word => `<span class="word">${word}</span>`).join(' ');
 
-            animateWords();
-        }
+        //     animateWords();
+        // }
 
         function animateWords() {
             const words = quoteElement.querySelectorAll('.word');
@@ -1474,28 +1474,28 @@ const testimonials = [
         }
 
         function handleNext() {
-            updateTestimonial(1);
+            // updateTestimonial(1);
         }
 
         function handlePrev() {
-            updateTestimonial(-1);
+            // updateTestimonial(-1);
         }
 
         // prevButton.addEventListener('click', handlePrev);
         // nextButton.addEventListener('click', handleNext);
 
         // Initial setup
-        updateTestimonial(0);
+        // updateTestimonial(0);
 
         // Autoplay functionality
         const autoplayInterval = setInterval(handleNext, 5000);
 
         // Stop autoplay on user interaction
-        [prevButton, nextButton].forEach(button => {
-            button.addEventListener('click', () => {
-                clearInterval(autoplayInterval);
-            });
-        });
+        // [prevButton, nextButton].forEach(button => {
+        //     button.addEventListener('click', () => {
+        //         clearInterval(autoplayInterval);
+        //     });
+        // });
   </script>
 
   <script>
